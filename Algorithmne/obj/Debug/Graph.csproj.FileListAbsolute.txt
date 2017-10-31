@@ -1,0 +1,6 @@
+C:\Users\yshen\documents\visual studio 2015\Projects\Algorithmne\Algorithmne\bin\Debug\Algorithmne.exe.config
+C:\Users\yshen\documents\visual studio 2015\Projects\Algorithmne\Algorithmne\bin\Debug\Algorithmne.exe
+C:\Users\yshen\documents\visual studio 2015\Projects\Algorithmne\Algorithmne\bin\Debug\Algorithmne.pdb
+C:\Users\yshen\documents\visual studio 2015\Projects\Algorithmne\Algorithmne\obj\Debug\Graph.csprojResolveAssemblyReference.cache
+C:\Users\yshen\documents\visual studio 2015\Projects\Algorithmne\Algorithmne\obj\Debug\Algorithmne.exe
+C:\Users\yshen\documents\visual studio 2015\Projects\Algorithmne\Algorithmne\obj\Debug\Algorithmne.pdb
