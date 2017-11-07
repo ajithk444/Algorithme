@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TopologicalSorting.cs" />
     <Compile Include="AdjacencyList.cs" />
     <Compile Include="AdjacencyMatrix.cs" />
+    <Compile Include="FindLongestPath.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
