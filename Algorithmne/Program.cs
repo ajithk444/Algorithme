@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Algorithmne
 {
@@ -28,15 +29,32 @@ namespace Algorithmne
             //adjacencyList.DisplayGraphDFS(start);
 
             //TopologicalSorting
-            TopologicalSorting adjacencyList = new TopologicalSorting(6);
-            adjacencyList.AddEdge(5, 2);
-            adjacencyList.AddEdge(5, 0);
-            adjacencyList.AddEdge(4, 0);
-            adjacencyList.AddEdge(4, 1);
-            adjacencyList.AddEdge(2, 3);
-            adjacencyList.AddEdge(3, 1);
+            //TopologicalSorting adjacencyList = new TopologicalSorting(6);
+            //adjacencyList.AddEdge(5, 2);
+            //adjacencyList.AddEdge(5, 0);
+            //adjacencyList.AddEdge(4, 0);
+            //adjacencyList.AddEdge(4, 1);
+            //adjacencyList.AddEdge(2, 3);
+            //adjacencyList.AddEdge(3, 1);
 
-            adjacencyList.StartTopologicalSorting();
+            //adjacencyList.StartTopologicalSorting();
+
+            //Longest Path
+            LongestPath adjacencyList = new LongestPath(6);
+            adjacencyList.AddEdge(0, 1, 5);
+            adjacencyList.AddEdge(0, 2, 3);
+            adjacencyList.AddEdge(1, 3, 6);
+            adjacencyList.AddEdge(1, 2, 2);
+            adjacencyList.AddEdge(2, 4, 4);
+            adjacencyList.AddEdge(2, 5, 2);
+            adjacencyList.AddEdge(2, 3, 7);
+            adjacencyList.AddEdge(3, 5, 1);
+            adjacencyList.AddEdge(3, 4, -1);
+            adjacencyList.AddEdge(4, 5, -2);
+
+            //adjacencyList.CalculateLongestPathWithTopologicalOrder(1);
+            adjacencyList.CalculateLongestPathWithRecursiveWay(1);
+
 
             Console.Read();
 
