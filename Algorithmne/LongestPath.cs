@@ -1,5 +1,7 @@
 ﻿
 
+using System.Linq;
+
 namespace Algorithmne
 {
     //Given a Weighted Directed Acyclic Graph(DAG) and a source vertex s in it, find the longest distances from s to all other vertices in the given graph.
@@ -67,11 +69,13 @@ namespace Algorithmne
             }
         }
 
+        //Solution 1
         public void CalculateLongestPathWithTopologicalOrder(int s)
         {
             StartTopologicalSorting();
             int[] weights = new int[V];
             Stack<int> copieStack = new Stack<int>(stack);
+            List<int> longestPath = new List<int>();
             
             for (var i = 0; i < weights.Length; i++)
             {
@@ -88,18 +92,34 @@ namespace Algorithmne
                     {
                         if (weights[numVertix] + node.Weight > weights[node.Num])
                         {
-                            weights[node.Num] = weights[numVertix] + node.Weight;
+                            weights[node.Num] = weights[numVertix] + node.Weight;           
                         }
                     }
                 }
             } while (stack.Count > 0);
 
-            while (copieStack.Count > 0)
+            foreach (int i in copieStack.Reverse())
             {
-                Console.Write(weights[copieStack.Pop()] + " ");
+                Console.Write(weights[i] + " ");
+            }
+
+            for (int i = 1; i < weights.Length; i++)
+            {
+                if (weights[i] != INFI && weights[i]>weights[i-1])
+                {
+                    longestPath.Add(i);
+                } 
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("The longest path is : ");
+            foreach (int i in longestPath)
+            {
+                Console.Write(weights[i] + " ");
             }
         }
 
+        //Solution 2
         public void CalculateLongestPathWithRecursiveWay(int s)
         {
             int[] weights = new int[V];
@@ -111,16 +131,20 @@ namespace Algorithmne
             
             weights[s] = 0;
             int src = s;
-
-            FindLongestPath(src, weights);
+            int level = 0;
+            List<int>[] paths = new List<int>[adjListArray[src].Count];
+            FindLongestPath(src, weights, paths);
 
             Console.WriteLine(WeightMax);
         }
 
-        public void FindLongestPath(int src, int[] weights)
+        public void FindLongestPath(int src, int[] weights, List<int>[] paths)
         {
+            int index = 0;
             foreach (Node node in adjListArray[src])
             {
+                paths[index].Add(src);
+                int sourceNum = 0;
                 if (weights[src] + node.Weight > weights[node.Num])
                 {
                     weights[node.Num] = weights[src] + node.Weight;
@@ -128,8 +152,9 @@ namespace Algorithmne
                         WeightMax = weights[node.Num];
                 }
 
-                src = node.Num;
-                FindLongestPath(src, weights);
+                sourceNum = node.Num;
+                FindLongestPath(sourceNum, weights, paths);
+                index++;
             }           
         }
     }

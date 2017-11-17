@@ -39,22 +39,33 @@ namespace Algorithmne
 
             //adjacencyList.StartTopologicalSorting();
 
-            //Longest Path
-            LongestPath adjacencyList = new LongestPath(6);
-            adjacencyList.AddEdge(0, 1, 5);
-            adjacencyList.AddEdge(0, 2, 3);
-            adjacencyList.AddEdge(1, 3, 6);
-            adjacencyList.AddEdge(1, 2, 2);
-            adjacencyList.AddEdge(2, 4, 4);
-            adjacencyList.AddEdge(2, 5, 2);
-            adjacencyList.AddEdge(2, 3, 7);
-            adjacencyList.AddEdge(3, 5, 1);
-            adjacencyList.AddEdge(3, 4, -1);
-            adjacencyList.AddEdge(4, 5, -2);
+            TopologicalSorting adjacencyList = new TopologicalSorting(9);
+            adjacencyList.AddEdge(0, 1);
+            adjacencyList.AddEdge(0, 2);
+            adjacencyList.AddEdge(1, 3);
+            adjacencyList.AddEdge(1, 4);
+            adjacencyList.AddEdge(1, 5);
+            adjacencyList.AddEdge(2, 6);
+            adjacencyList.AddEdge(6, 7);
+            adjacencyList.AddEdge(7, 8);
 
-            //adjacencyList.CalculateLongestPathWithTopologicalOrder(1);
-            adjacencyList.CalculateLongestPathWithRecursiveWay(1);
+            adjacencyList.StartTopologicalSorting();
 
+            ////Longest Path
+            //LongestPath adjacencyList = new LongestPath(6);
+            //adjacencyList.AddEdge(0, 1, 5);
+            //adjacencyList.AddEdge(0, 2, 3);
+            //adjacencyList.AddEdge(1, 3, 6);
+            //adjacencyList.AddEdge(1, 2, 2);
+            //adjacencyList.AddEdge(2, 4, 4);
+            //adjacencyList.AddEdge(2, 5, 2);
+            //adjacencyList.AddEdge(2, 3, 7);
+            //adjacencyList.AddEdge(3, 5, 1);
+            //adjacencyList.AddEdge(3, 4, -1);
+            //adjacencyList.AddEdge(4, 5, -2);
+
+            ////adjacencyList.CalculateLongestPathWithTopologicalOrder(1);
+            //adjacencyList.CalculateLongestPathWithRecursiveWay(1);
 
             Console.Read();
 

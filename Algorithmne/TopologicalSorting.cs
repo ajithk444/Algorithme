@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace Algorithmne
+﻿namespace Algorithmne
 {
     using System;
     using System.Collections.Generic;
