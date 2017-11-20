@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-
 namespace Algorithmne
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -38,20 +36,22 @@ namespace Algorithmne
             //adjacencyList.AddEdge(3, 1);
 
             //adjacencyList.StartTopologicalSorting();
+            //Graph 1.0.0
+            //TopologicalSorting adjacencyList = new TopologicalSorting(8);
+            //adjacencyList.AddEdge(0, 1);
+            //adjacencyList.AddEdge(0, 2);
+            //adjacencyList.AddEdge(1, 3);
+            //adjacencyList.AddEdge(1, 4);
+            //adjacencyList.AddEdge(2, 5);
+            //adjacencyList.AddEdge(5, 6);
+            //adjacencyList.AddEdge(6, 7);
+            //adjacencyList.AddEdge(4, 3);
+            //adjacencyList.AddEdge(4, 6);
 
-            TopologicalSorting adjacencyList = new TopologicalSorting(9);
-            adjacencyList.AddEdge(0, 1);
-            adjacencyList.AddEdge(0, 2);
-            adjacencyList.AddEdge(1, 3);
-            adjacencyList.AddEdge(1, 4);
-            adjacencyList.AddEdge(1, 5);
-            adjacencyList.AddEdge(2, 6);
-            adjacencyList.AddEdge(6, 7);
-            adjacencyList.AddEdge(7, 8);
-
-            adjacencyList.StartTopologicalSorting();
+            //adjacencyList.StartTopologicalSorting();
 
             ////Longest Path
+            //Graph 1.0.1
             //LongestPath adjacencyList = new LongestPath(6);
             //adjacencyList.AddEdge(0, 1, 5);
             //adjacencyList.AddEdge(0, 2, 3);
