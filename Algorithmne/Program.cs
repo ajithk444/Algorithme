@@ -67,6 +67,20 @@ namespace Algorithmne
             ////adjacencyList.CalculateLongestPathWithTopologicalOrder(1);
             //adjacencyList.CalculateLongestPathWithRecursiveWay(1);
 
+            //Strongly Connected Componenets -- Kosaraju’s algorithm
+            //Graph 1.0.2
+            AdjacencyList adjacencyList = new AdjacencyList(7, true);
+            adjacencyList.AddEdge(0, 1);
+            adjacencyList.AddEdge(1, 2);
+            adjacencyList.AddEdge(2, 0);
+            adjacencyList.AddEdge(2, 3);
+            adjacencyList.AddEdge(2, 6);
+            adjacencyList.AddEdge(3, 4);
+            adjacencyList.AddEdge(4, 5);
+            adjacencyList.AddEdge(5, 3);
+            StronglyConnectedComponent scc = new StronglyConnectedComponent(adjacencyList);
+            scc.PrintSCC();
+
             Console.Read();
 
         }

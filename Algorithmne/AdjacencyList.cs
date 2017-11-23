@@ -5,27 +5,33 @@
 
     public class AdjacencyList
     {
-        public int V;
-        public LinkedList<int>[] adjListArray;
-        bool[] visited;
+        public int V { get; set; }
+        public LinkedList<int>[] AdjListArray { get; set; }
+        public bool[] Visited { get; set; }
+        public bool IsDirected { get; set; }
 
-        public AdjacencyList(int v)
+        public AdjacencyList(int v, bool isDirected = false)
         {
             V = v;
-            adjListArray = new LinkedList<int>[V];
+            AdjListArray = new LinkedList<int>[V];
 
-            for (var i = 0; i < adjListArray.Length; i++)
+            for (var i = 0; i < AdjListArray.Length; i++)
             {
-                adjListArray[i]=new LinkedList<int>();
+                AdjListArray[i]=new LinkedList<int>();
             }
 
-            visited = new bool[V];
+            Visited = new bool[V];
+            IsDirected = isDirected;
         }
 
         public void AddEdge(int src, int des)
         {
-            adjListArray[src].AddLast(des);
-            adjListArray[des].AddLast(src);
+            AdjListArray[src].AddLast(des);
+            if (!IsDirected)
+            {
+                AdjListArray[des].AddLast(src);
+            }
+                
         }
 
         public void DisplayGraphBFS()
@@ -42,7 +48,7 @@
             {
                 int next = queue.Dequeue();
                 Console.Write(next + " ");
-                foreach (int i in adjListArray[next])
+                foreach (int i in AdjListArray[next])
                 {
                     if (visited[i] != true)
                     {
@@ -56,14 +62,14 @@
         public void DisplayGraphDFS(int start)
         {
             Console.Write(start+" ");
-            visited[start] = true;
+            Visited[start] = true;
 
-            foreach (int i in adjListArray[start])
+            foreach (int i in AdjListArray[start])
             {
-                if (visited[i] != true)
+                if (Visited[i] != true)
                 {
                     DisplayGraphDFS(i);
-                    visited[i] = true;
+                    Visited[i] = true;
                 }
             }
         }
@@ -72,7 +78,7 @@
         {
             for (int i = 0; i < V; i++)
             {
-                foreach (int item in adjListArray[i])
+                foreach (int item in AdjListArray[i])
                 {
                     Console.Write(item + " ");
                 }
