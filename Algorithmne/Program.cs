@@ -69,17 +69,69 @@ namespace Algorithmne
 
             //Strongly Connected Componenets -- Kosaraju’s algorithm
             //Graph 1.0.2
-            AdjacencyList adjacencyList = new AdjacencyList(7, true);
-            adjacencyList.AddEdge(0, 1);
-            adjacencyList.AddEdge(1, 2);
-            adjacencyList.AddEdge(2, 0);
-            adjacencyList.AddEdge(2, 3);
-            adjacencyList.AddEdge(2, 6);
-            adjacencyList.AddEdge(3, 4);
-            adjacencyList.AddEdge(4, 5);
-            adjacencyList.AddEdge(5, 3);
-            StronglyConnectedComponent scc = new StronglyConnectedComponent(adjacencyList);
-            scc.PrintSCC();
+            //AdjacencyList adjacencyList = new AdjacencyList(7, true);
+            //adjacencyList.AddEdge(0, 1);
+            //adjacencyList.AddEdge(1, 2);
+            //adjacencyList.AddEdge(2, 0);
+            //adjacencyList.AddEdge(2, 3);
+            //adjacencyList.AddEdge(2, 6);
+            //adjacencyList.AddEdge(3, 4);
+            //adjacencyList.AddEdge(4, 5);
+            //adjacencyList.AddEdge(5, 3);
+            //StronglyConnectedComponent scc = new StronglyConnectedComponent(adjacencyList);
+            //scc.PrintSCC();
+
+            //Strongly Connected Componenets -- Kosaraju’s algorithm
+            //Graph 1.0.2
+            //AdjacencyList adjacencyList = new AdjacencyList(7, true);
+            //adjacencyList.AddEdge(0, 1);
+            //adjacencyList.AddEdge(1, 2);
+            //adjacencyList.AddEdge(2, 0);
+            //adjacencyList.AddEdge(2, 3);
+            //adjacencyList.AddEdge(2, 6);
+            //adjacencyList.AddEdge(3, 4);
+            //adjacencyList.AddEdge(4, 5);
+            //adjacencyList.AddEdge(5, 3);
+            //FindMotherVertex findMotherVertex= new FindMotherVertex(adjacencyList);
+            //findMotherVertex.Print();
+
+            //Find transive closure graph
+            //Graph 1.0.2
+            //AdjacencyList adjacencyList = new AdjacencyList(7, true);
+            //adjacencyList.AddEdge(0, 1);
+            //adjacencyList.AddEdge(1, 2);
+            //adjacencyList.AddEdge(2, 0);
+            //adjacencyList.AddEdge(2, 3);
+            //adjacencyList.AddEdge(2, 6);
+            //adjacencyList.AddEdge(3, 4);
+            //adjacencyList.AddEdge(4, 5);
+            //adjacencyList.AddEdge(5, 3);
+            //TransitiveClosureGraph tcg = new TransitiveClosureGraph(adjacencyList);
+            //tcg.PrintTransitiveMatrix();
+
+            //IDDF Searching
+            //Graph 1.0.0
+            //AdjacencyList adjacencyList = new AdjacencyList(8, true);
+            //adjacencyList.AddEdge(0, 1);
+            //adjacencyList.AddEdge(0, 2);
+            //adjacencyList.AddEdge(1, 3);
+            //adjacencyList.AddEdge(1, 4);
+            //adjacencyList.AddEdge(2, 5);
+            //adjacencyList.AddEdge(5, 6);
+            //adjacencyList.AddEdge(6, 7);
+            //adjacencyList.AddEdge(4, 3);
+            //adjacencyList.AddEdge(4, 6);
+            //IDDF iddf = new IDDF(adjacencyList);
+            ////iddf.DisplayPath(0, 4);
+            //int target = Convert.ToInt32(Console.ReadLine());
+            //if (iddf.Find(0, target, 3))
+            //{
+            //    Console.WriteLine("The value is found");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The value is not found");
+            //}
 
             Console.Read();
 

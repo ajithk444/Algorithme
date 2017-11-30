@@ -24,6 +24,14 @@
             IsDirected = isDirected;
         }
 
+        public void Reset()
+        {
+            for (var i = 0; i < Visited.Length; i++)
+            {
+                Visited[i] = false;
+            }
+        }
+
         public void AddEdge(int src, int des)
         {
             AdjListArray[src].AddLast(des);

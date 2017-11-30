@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FindMotherVertex.cs" />
+    <Compile Include="IDDF.cs" />
     <Compile Include="StronglyConnectedComponent.cs" />
     <Compile Include="LongestPath.cs" />
     <Compile Include="TopologicalSorting.cs" />
@@ -51,6 +53,7 @@
     <Compile Include="FindLongestPath.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransitiveClosureGraph.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
