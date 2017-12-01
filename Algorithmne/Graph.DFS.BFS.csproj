@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="FindMotherVertex.cs" />
     <Compile Include="IDDF.cs" />
+    <Compile Include="KCore.cs" />
     <Compile Include="StronglyConnectedComponent.cs" />
     <Compile Include="LongestPath.cs" />
     <Compile Include="TopologicalSorting.cs" />
