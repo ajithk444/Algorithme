@@ -12,30 +12,24 @@ namespace Algorithmne
             AdjList = adjList;
         }
 
-        public void DFSUtil(int start, int k)
+        public bool DFSUtil(int start, int[] degrees, int k)
         {
             AdjList.Visited[start] = true;
-            int childrenNum = AdjList.AdjListArray[start].Count;
 
-            for (int i = 0; i < childrenNum; i++)
+            foreach (int i in AdjList.AdjListArray[start])
             {
-                if (childrenNum < k)
+                if (degrees[start] < k)
                 {
-                    int item = AdjList.AdjListArray[start].First.Value;
-                    AdjList.AdjListArray[start].Remove(item);
-                    AdjList.AdjListArray[item].Remove(start);
-                    DFSUtil(item, k);
+                    degrees[i]--;
                 }
-                else
+
+                if (!AdjList.Visited[i] && DFSUtil(i, degrees, k))
                 {
-                    int child = AdjList.AdjListArray[start].ElementAt(i);
-                    if (AdjList.Visited[child] == false)
-                    {
-                        DFSUtil(child, k);
-                    }
+                    degrees[start]--;
                 }
-              
             }
+
+            return degrees[start] < k ? true : false;
         }
 
         public void Print(int k)
@@ -43,31 +37,48 @@ namespace Algorithmne
             int v = AdjList.V;
             int startPoint = 0;
             bool hasKeyCore = false;
+            int[] degrees = new int[v];
 
+            int min = Int32.MaxValue;
             for (int i = 0; i < v; i++)
             {
-                if (AdjList.AdjListArray[i].Count < k)
+                degrees[i] = AdjList.AdjListArray[i].Count;
+                if (degrees[i] < min)
                 {
+                    min = degrees[i];
                     startPoint = i;
-                    break;
                 }
             }
 
-            DFSUtil(startPoint, k);
 
-            hasKeyCore = AdjList.AdjListArray.Any(s => s.Count >= k);
+            if (degrees[startPoint] < k)
+            {
+                DFSUtil(startPoint, degrees, k);
+            }
+            
+            for (int i = 0; i < AdjList.AdjListArray.Length; i++)
+            {
+                if (AdjList.Visited[i] == false)
+                {
+                    DFSUtil(i, degrees, k);
+                }  
+            }
+
+            hasKeyCore = degrees.Any(s => s >= k);
 
             if (hasKeyCore)
             {
-                for (int i = 0; i < AdjList.AdjListArray.Length; i++)
+                for (int i = 0; i < v; i++)
                 {
-                    if (AdjList.AdjListArray[i].Count >= k)
+                    if (degrees[i] >= k)
                     {
                         Console.Write(i + " => ");
                         foreach (int m in AdjList.AdjListArray[i])
                         {
+                            if(degrees[m] >= k)
                             Console.Write(m + " => ");
                         }
+                        Console.WriteLine();
                     }
                 }
                

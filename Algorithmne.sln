@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph.DFS.BFS", "Algorithmne\Graph.DFS.BFS.csproj", "{02EFC24E-313F-4E51-98D7-A8A5AD179C05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph.DFS.BFS", "Graph\Graph.DFS.BFS\Graph.DFS.BFS.csproj", "{02EFC24E-313F-4E51-98D7-A8A5AD179C05}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Graph", "Graph", "{C42C2F22-D70F-4A58-A6B8-11A5276D5C16}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Graph", "Graph", "{E1DF59D9-4CBA-4525-8C6A-BC87A79E0B7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph.Cycle", "Graph\Graph.Cycle\Graph.Cycle.csproj", "{7ECC1890-9015-43A6-8BC1-F122E6020DE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,11 +19,16 @@ Global
 		{02EFC24E-313F-4E51-98D7-A8A5AD179C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02EFC24E-313F-4E51-98D7-A8A5AD179C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02EFC24E-313F-4E51-98D7-A8A5AD179C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ECC1890-9015-43A6-8BC1-F122E6020DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ECC1890-9015-43A6-8BC1-F122E6020DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ECC1890-9015-43A6-8BC1-F122E6020DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ECC1890-9015-43A6-8BC1-F122E6020DE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{02EFC24E-313F-4E51-98D7-A8A5AD179C05} = {C42C2F22-D70F-4A58-A6B8-11A5276D5C16}
+		{02EFC24E-313F-4E51-98D7-A8A5AD179C05} = {E1DF59D9-4CBA-4525-8C6A-BC87A79E0B7F}
+		{7ECC1890-9015-43A6-8BC1-F122E6020DE4} = {E1DF59D9-4CBA-4525-8C6A-BC87A79E0B7F}
 	EndGlobalSection
 EndGlobal
