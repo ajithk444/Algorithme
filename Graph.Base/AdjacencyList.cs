@@ -1,4 +1,4 @@
-﻿namespace Algorithmne
+﻿namespace Graph.Base
 {
     using System;
     using System.Collections.Generic;

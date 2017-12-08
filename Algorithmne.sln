@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Graph", "Graph", "{E1DF59D9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph.Cycle", "Graph\Graph.Cycle\Graph.Cycle.csproj", "{7ECC1890-9015-43A6-8BC1-F122E6020DE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph.Base", "Graph.Base\Graph.Base.csproj", "{80E8DB11-0381-4D61-9BBE-E886F11AE0FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{7ECC1890-9015-43A6-8BC1-F122E6020DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ECC1890-9015-43A6-8BC1-F122E6020DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ECC1890-9015-43A6-8BC1-F122E6020DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80E8DB11-0381-4D61-9BBE-E886F11AE0FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E8DB11-0381-4D61-9BBE-E886F11AE0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E8DB11-0381-4D61-9BBE-E886F11AE0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E8DB11-0381-4D61-9BBE-E886F11AE0FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +36,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{02EFC24E-313F-4E51-98D7-A8A5AD179C05} = {E1DF59D9-4CBA-4525-8C6A-BC87A79E0B7F}
 		{7ECC1890-9015-43A6-8BC1-F122E6020DE4} = {E1DF59D9-4CBA-4525-8C6A-BC87A79E0B7F}
+		{80E8DB11-0381-4D61-9BBE-E886F11AE0FD} = {E1DF59D9-4CBA-4525-8C6A-BC87A79E0B7F}
 	EndGlobalSection
 EndGlobal

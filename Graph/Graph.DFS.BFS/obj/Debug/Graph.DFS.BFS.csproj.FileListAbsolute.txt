@@ -7,3 +7,8 @@ C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Algorithmne\obj
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph\Graph.DFS.BFS\bin\Debug\Algorithmne.exe.config
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph\Graph.DFS.BFS\obj\Debug\Algorithmne.exe
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph\Graph.DFS.BFS\obj\Debug\Algorithmne.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph\Graph.DFS.BFS\obj\Debug\Graph.DFS.BFS.csprojResolveAssemblyReference.cache
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph\Graph.DFS.BFS\bin\Debug\Algorithmne.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph\Graph.DFS.BFS\bin\Debug\Algorithmne.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph\Graph.DFS.BFS\bin\Debug\Graph.Base.dll
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph\Graph.DFS.BFS\bin\Debug\Graph.Base.pdb
