@@ -1,73 +1,50 @@
-﻿namespace Algorithmne
+﻿using System.Linq;
+using Graph.Base;
+
+namespace Algorithmne
 {
     using System;
     using System.Collections.Generic;
 
     public class TopologicalSorting
     {
-        public int V;
-        public LinkedList<int>[] adjListArray;
-        bool[] visited;
+        public AdjacencyList AdjList { get; set; }
+        public Stack<int> Stack { get; set; }
 
-        public TopologicalSorting(int v)
+        public TopologicalSorting(AdjacencyList adjList)
         {
-            V = v;
-            adjListArray = new LinkedList<int>[V];
-
-            for (var i = 0; i < adjListArray.Length; i++)
-            {
-                adjListArray[i]=new LinkedList<int>();
-            }
-
-            visited = new bool[V];
+            AdjList = adjList;
+            Stack = new Stack<int>();
         }
 
-        public void AddEdge(int src, int des)
+        public void TopologicalSortingUtil(int i)
         {
-            adjListArray[src].AddLast(des);
-        }
+            AdjList.Visited[i] = true;
 
-        public void TopologicalSortingUtil(int i, Stack<int> stack)
-        {
-            if (visited[i] == false)
+            foreach (int s in AdjList.AdjListArray[i])
             {
-                visited[i] = true;
-
-                foreach (int s in adjListArray[i])
+                if (!AdjList.Visited[s])
                 {
-                    TopologicalSortingUtil(s, stack);
+                    TopologicalSortingUtil(s);
                 }
-
-                stack.Push(i);
             }
+
+            Stack.Push(i);
         }
 
         public void StartTopologicalSorting()
         {
-            Stack<int> stack = new Stack<int>();
-            for (int i = 0; i < V; i++)
+            for (int i = 0; i < AdjList.V; i++)
             {
-                if (!visited[i])
+                if (!AdjList.Visited[i])
                 {
-                    TopologicalSortingUtil(i, stack);
+                    TopologicalSortingUtil(i);
                 }
             }
 
-            while (stack.Count > 0)
+            foreach (int i in Stack)
             {
-                Console.Write(stack.Pop()+" ");
-            }
-        }
-
-        public void Print()
-        {
-            for (int i = 0; i < V; i++)
-            {
-                foreach (int item in adjListArray[i])
-                {
-                    Console.Write(item + " ");
-                }
-                Console.WriteLine();
+                Console.Write(i + " => ");
             }
         }
     }
