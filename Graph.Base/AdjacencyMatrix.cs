@@ -1,32 +1,37 @@
 ﻿namespace Graph.Base
 {
     using System;
-    using System.Linq;
 
     public class AdjacencyMatrix
     {
         public static int[,] AdacencyMatrix;
+        public int N { get; set; }
+        public int E { get; set; }
+        public bool IsDirected { get; set; }
 
-        public static void Generate()
+        public AdjacencyMatrix(int n, bool isDirected = false)
         {
-            int N = int.Parse(Console.ReadLine());
+            N = n;
+            E = 0;
             AdacencyMatrix = new int[N, N];
-            int E = int.Parse(Console.ReadLine());
-            int i = 0;
-            while (i < E)
-            {
-                int[] indexes = Console.ReadLine().Split(' ').ToArray().Select(s => int.Parse(s)).ToArray();
-                AdacencyMatrix[indexes[0], indexes[1]] = 1;
-                AdacencyMatrix[indexes[1], indexes[0]] = 1;
-                i++;
-            }
+            IsDirected = isDirected;
         }
 
-        public static void Print()
+        public void AddEdge(int src, int des, bool isDirected = false)
         {
-            for (int i = 0; i < AdacencyMatrix.GetLength(0); i++)
+            AdacencyMatrix[src, des] = 1;
+            if (!IsDirected)
             {
-                for (int j = 0; j < AdacencyMatrix.GetLength(1); j++)
+                AdacencyMatrix[des, src] = 1;
+            }
+            ++E;
+        }
+
+        public void Print()
+        {
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < N; j++)
                 {
                     Console.Write(AdacencyMatrix[i,j] + " ");
                 }
