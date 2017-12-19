@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdjacencyListEdgeWeight.cs" />
     <Compile Include="AdjacencyList.cs" />
     <Compile Include="AdjacencyMatrix.cs" />
     <Compile Include="GraphVertexEdge.cs" />

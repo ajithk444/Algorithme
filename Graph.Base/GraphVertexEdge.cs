@@ -6,6 +6,7 @@ namespace Graph.Base
     {
         public int Src { get; set; }
         public int Des { get; set; }
+        public int Weight { get; set; }
     }
     public class GraphVertexEdge
     {
