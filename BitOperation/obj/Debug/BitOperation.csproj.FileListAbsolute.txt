@@ -1,0 +1,6 @@
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\BitOperation\bin\Debug\BitOperation.exe.config
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\BitOperation\bin\Debug\BitOperation.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\BitOperation\bin\Debug\BitOperation.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\BitOperation\obj\Debug\BitOperation.csprojResolveAssemblyReference.cache
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\BitOperation\obj\Debug\BitOperation.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\BitOperation\obj\Debug\BitOperation.pdb
