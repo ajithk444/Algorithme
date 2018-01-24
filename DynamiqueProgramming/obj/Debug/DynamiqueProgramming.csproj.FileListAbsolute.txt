@@ -1,0 +1,6 @@
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\DynamiqueProgramming\bin\Debug\DynamiqueProgramming.exe.config
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\DynamiqueProgramming\bin\Debug\DynamiqueProgramming.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\DynamiqueProgramming\bin\Debug\DynamiqueProgramming.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\DynamiqueProgramming\obj\Debug\DynamiqueProgramming.csprojResolveAssemblyReference.cache
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\DynamiqueProgramming\obj\Debug\DynamiqueProgramming.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\DynamiqueProgramming\obj\Debug\DynamiqueProgramming.pdb

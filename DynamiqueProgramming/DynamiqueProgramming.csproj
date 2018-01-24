@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2C0D34EF-DCBB-40F9-8E10-F78D122FFBE9}</ProjectGuid>
+    <ProjectGuid>{935F300F-6795-4951-9C80-9C76382BD5FC}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BitOperation</RootNamespace>
-    <AssemblyName>BitOperation</AssemblyName>
+    <RootNamespace>DynamiqueProgramming</RootNamespace>
+    <AssemblyName>DynamiqueProgramming</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BitMasking.cs" />
-    <Compile Include="BitMaskingCaps.cs" />
-    <Compile Include="FindElementOnce.cs" />
+    <Compile Include="BinominalCoefficient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -53,7 +51,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="questions\BitmaskingCaps.txt" />
+    <Content Include="questions\BinominalCoefficient.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

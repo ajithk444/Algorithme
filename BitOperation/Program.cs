@@ -11,8 +11,11 @@
             //FindElementOnce.DisplayWithMethod2(arr, 3);
 
             //Bitmasking
-            BitMasking bitMasking = new BitMasking(12, 4);
-            Console.WriteLine("The number of non zero bit is : " + bitMasking.Count());
+            //BitMasking bitMasking = new BitMasking(12, 4);
+            //Console.WriteLine("The number of non zero bit is : " + bitMasking.Count());
+
+            //BitmaskingCaps
+            BitMaskingCaps.Test();
 
             Console.Read();
         }
