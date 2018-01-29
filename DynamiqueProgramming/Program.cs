@@ -6,8 +6,9 @@ namespace DynamiqueProgramming
     {
         static void Main(string[] args)
         {
-            //Binominal coefficient
-            BinominalCoefficient.Test();
+            //BinominalCoefficient.Test();
+
+            DigitSum.Start();
 
             Console.ReadKey();
         }

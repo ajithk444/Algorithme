@@ -1,0 +1,4 @@
+﻿Given to integers a and b. Your task is to print the sum of
+all the digits appearing in the integers between a and b.
+
+For example if a = 5 and b = 11, then answer is 38 (5 + 6 + 7 + 8 + 9 + 1 + 0 + 1 + 1)
