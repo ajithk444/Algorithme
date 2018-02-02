@@ -8,7 +8,9 @@ namespace DynamiqueProgramming
         {
             //BinominalCoefficient.Test();
 
-            DigitSum.Start();
+            //DigitSum.Start();
+
+            LongestCommonSequence.GetLCS("ABCDEFFSS", "DEABFHHUS");
 
             Console.ReadKey();
         }

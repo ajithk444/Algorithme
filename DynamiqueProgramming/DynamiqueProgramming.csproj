@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="BinominalCoefficient.cs" />
     <Compile Include="DigitSum.cs" />
+    <Compile Include="LongestCommonSequence.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
