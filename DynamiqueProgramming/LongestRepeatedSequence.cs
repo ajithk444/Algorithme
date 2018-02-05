@@ -4,22 +4,21 @@ using System.Linq;
 
 namespace DynamiqueProgramming
 {
-    public class LongestCommonSequence
+    public class LongestRepeatedSequence
     {
-        public static void GetLCS(string str1, string str2)
+        public static void GetLRS(string str1)
         {
             char[] xChars = str1.ToCharArray();
-            char[] yChars = str2.ToCharArray();
+            char[] yChars = xChars;
 
             int xLength = xChars.Length + 1;
-            int yLength = yChars.Length + 1;
 
-            int[,] matrix = new int[yLength, xLength];
-            for (int i = 1; i < yLength; i++)
+            int[,] matrix = new int[xLength, xLength];
+            for (int i = 1; i < xLength; i++)
             {
                 for (int j = 1; j < xLength; j++)
                 {
-                    if(xChars[j-1] == yChars[i - 1])
+                    if(i!=j && xChars[i-1] == yChars[j - 1])
                     {
                         matrix[i, j] = matrix[i - 1, j - 1] + 1;
                     }else
@@ -29,9 +28,10 @@ namespace DynamiqueProgramming
                 }
             }
 
-            Console.WriteLine("The longest length of sequence is : " + matrix[yLength-1, xLength-1]);
+            Console.WriteLine("The longest length of repeated sequence is : " + matrix[xLength-1, xLength - 1]);
+
             Console.WriteLine("The matrix is like this : ");
-            for (int i = 0; i < yLength; i++)
+            for (int i = 0; i < xLength; i++)
             {
                 for (int j = 0; j < xLength; j++)
                 {
@@ -42,8 +42,8 @@ namespace DynamiqueProgramming
 
             List<char> chars = new List<char>();
 
-            int m = yLength-1;
-            int n = xLength-1;
+            int m = xLength-1;
+            int n = m;
 
             while (m > 0 && n > 0)
             {
@@ -59,7 +59,7 @@ namespace DynamiqueProgramming
                 }
                 else
                 {
-                    chars.Add(xChars[n-1]);
+                    chars.Add(xChars[m - 1]);
                     m--;
                     n--;
                 }

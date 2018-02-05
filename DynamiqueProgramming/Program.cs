@@ -10,7 +10,14 @@ namespace DynamiqueProgramming
 
             //DigitSum.Start();
 
-            LongestCommonSequence.GetLCS("ABCDEFFSS", "DEABFHHUS");
+            //LongestCommonSequence.GetLCS("ABCDE", "ABCE");
+
+            //LongestRepeatedSequence.GetLRS("BCBDEBCBDEFB");
+
+            //LongestSubSequence.GetLSS("BCBDEBCBDEFB");
+
+            //Example 1 -2 4 -1 2 1
+            LargestSumContiguousSubArray.GetLargestSum();
 
             Console.ReadKey();
         }
