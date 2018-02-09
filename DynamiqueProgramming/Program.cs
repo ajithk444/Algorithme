@@ -17,7 +17,9 @@ namespace DynamiqueProgramming
             //LongestSubSequence.GetLSS("BCBDEBCBDEFB");
 
             //Example 1 -2 4 -1 2 1
-            LargestSumContiguousSubArray.GetLargestSum();
+            //LargestSumContiguousSubArray.GetLargestSum();
+
+            UglyNumSolution2.Print(150);
 
             Console.ReadKey();
         }

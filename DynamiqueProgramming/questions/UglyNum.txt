@@ -1,0 +1,3 @@
+﻿ows the first 11 ugly numbers. By convention, 1 is included.
+
+Given a number n, the task is to find n’th Ugly number.

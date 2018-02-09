@@ -27,8 +27,7 @@ namespace DynamiqueProgramming
         {
             if (Sums[counter] != int.MinValue) return Sums[counter];
             if (counter == 0) return Nums[0];
-            if (Sums[counter-1] < 0) return Sums[counter] = Nums[counter];
-            return Sums[counter] = Sums[counter - 1] + Nums[counter];
+            return Sums[counter] = Math.Max(GetGreatestLastElementsSum(counter-1)+ Nums[counter], Nums[counter]);
         }
 
         public static void GetLargestSum()
@@ -47,7 +46,7 @@ namespace DynamiqueProgramming
             {
                 Console.Write(item + " ");
             }
-
+            Console.WriteLine();
             Console.WriteLine("The largest sum is " + GetLargestSumUtil());
         }
     }

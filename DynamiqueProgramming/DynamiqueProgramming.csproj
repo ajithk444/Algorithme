@@ -51,11 +51,14 @@
     <Compile Include="LongestCommonSequence.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UglyNum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="questions\UglyNum.txt" />
+    <Content Include="questions\LargestSumContiguousSubArray.txt" />
     <Content Include="questions\LongestSequenceProblem.txt" />
     <Content Include="questions\DigitSum.txt" />
     <Content Include="questions\BinominalCoefficient.txt" />
