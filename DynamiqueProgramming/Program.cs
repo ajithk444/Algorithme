@@ -19,7 +19,9 @@ namespace DynamiqueProgramming
             //Example 1 -2 4 -1 2 1
             //LargestSumContiguousSubArray.GetLargestSum();
 
-            UglyNumSolution2.Print(150);
+            //UglyNumSolution2.Print(150);
+
+            MaxiumSubSquareMatrix.GetMaximunSquareMatrix();
 
             Console.ReadKey();
         }

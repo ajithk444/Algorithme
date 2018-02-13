@@ -49,6 +49,7 @@
     <Compile Include="LongestSubSequence.cs" />
     <Compile Include="LongestRepeatedSequence.cs" />
     <Compile Include="LongestCommonSequence.cs" />
+    <Compile Include="MaxiumSubSquareMatrix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UglyNum.cs" />
