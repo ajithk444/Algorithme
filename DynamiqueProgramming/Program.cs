@@ -21,7 +21,13 @@ namespace DynamiqueProgramming
 
             //UglyNumSolution2.Print(150);
 
-            MaxiumSubSquareMatrix.GetMaximunSquareMatrix();
+            //MaxiumSubSquareMatrix.GetMaximunSquareMatrix();
+
+            //LongestIncreasingSequence.PrintLongestSequence();
+
+            //MinCost.GetMinCost();
+
+            CoinChange.Start();
 
             Console.ReadKey();
         }

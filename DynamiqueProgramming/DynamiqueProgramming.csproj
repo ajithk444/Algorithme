@@ -44,20 +44,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinominalCoefficient.cs" />
+    <Compile Include="CoinChange.cs" />
     <Compile Include="DigitSum.cs" />
     <Compile Include="LargestSumContiguousSubArray.cs" />
+    <Compile Include="LongestIncreasingSequence.cs" />
     <Compile Include="LongestSubSequence.cs" />
     <Compile Include="LongestRepeatedSequence.cs" />
     <Compile Include="LongestCommonSequence.cs" />
     <Compile Include="MaxiumSubSquareMatrix.cs" />
+    <Compile Include="MinCost.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="questions\CoinChange.txt" />
+    <Content Include="questions\MinCostPath.txt" />
     <Compile Include="UglyNum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="questions\LongestIncreasingSequence.txt" />
+    <Content Include="questions\MaximumSubSquareMatrix.txt" />
     <Content Include="questions\UglyNum.txt" />
     <Content Include="questions\LargestSumContiguousSubArray.txt" />
     <Content Include="questions\LongestSequenceProblem.txt" />
