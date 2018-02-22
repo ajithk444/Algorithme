@@ -27,7 +27,13 @@ namespace DynamiqueProgramming
 
             //MinCost.GetMinCost();
 
-            CoinChange.Start();
+            //CoinChange.Start();
+
+            //MinOperationConvertionStrings.Start("sunday", "saturday");
+
+            //CuttingRod.Start();
+
+            SubsetSum.Start();
 
             Console.ReadKey();
         }
