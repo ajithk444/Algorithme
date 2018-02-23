@@ -9,51 +9,31 @@ namespace DynamiqueProgramming
     public class SubsetSum
     {
         public static int[] nums;
-        public static bool[] areUsed;
-        public static int[] dp;
+        public static int[,] dp;
 
-        public static bool IsPossible(int sum, int level)
+        public static bool IsPossible(int sum, int index)
         {
-            if (sum < 0) return false;
-            if (sum == 0) return true;
-            if (dp[sum] != 0) return dp[sum] == 1 ? false : true;
-            for (int i = 0; i < nums.Length; i++)
+            if (sum == 0 && index == -1) return true;
+            if (sum < 0 || index < 0) return false;
+            if (dp[sum, index] != 0) return dp[sum, index] == 1 ? true : false;
+            if (sum == 0)
             {
-                if(level == 0)
-                {
-                    Reset();
-                }
-
-                if(areUsed[i] == false)
-                {
-                    areUsed[i] = true;
-                    if (IsPossible(sum - nums[i], level + 1))
-                    {
-                        dp[sum] = 2;
-                        return true;
-                    }
-                }
+                dp[sum, index] = 1;
+                return true;
             }
-            dp[sum] = 1;
-            return false;
-        }
 
-        public static void Reset()
-        {
-            for (int i = 0; i < areUsed.Length; i++)
-            {
-                areUsed[i] = false;
-            }
+            bool result = IsPossible(sum - nums[index], index - 1) || IsPossible(sum, index - 1);
+            dp[sum, index] = result == true ? 1 : 2;
+            return result;
         }
 
         public static void Start()
         {
-            nums = new int[] { 5, 3, 14, 7, 8, 4, 12, 7 };
-            areUsed = new bool[nums.Length];
+            nums = new int[] { 5, 3, 14, 7, 8, 4 };
             Console.WriteLine("Please enter a sum : ");
             int sum = int.Parse(Console.ReadLine());
-            dp = new int[sum+1];
-            Console.WriteLine(IsPossible(sum, 0));
+            dp = new int[sum+1, nums.Length];
+            Console.WriteLine(IsPossible(sum, nums.Length-1));
             Console.WriteLine();
         }
     }
