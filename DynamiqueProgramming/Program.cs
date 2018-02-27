@@ -33,7 +33,11 @@ namespace DynamiqueProgramming
 
             //CuttingRod.Start();
 
-            SubsetSum.Start();
+            //SubsetSum.Start();
+
+            //MinimumNumberJump.Start();
+
+            AssemblyLine.start();
 
             Console.ReadKey();
         }

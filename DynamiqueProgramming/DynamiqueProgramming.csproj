@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssemblyLine.cs" />
     <Compile Include="BinominalCoefficient.cs" />
     <Compile Include="CoinChange.cs" />
     <Compile Include="CuttingRod.cs" />
@@ -54,11 +55,14 @@
     <Compile Include="LongestCommonSequence.cs" />
     <Compile Include="MaxiumSubSquareMatrix.cs" />
     <Compile Include="MinCost.cs" />
+    <Compile Include="MinimumNumberJump.cs" />
     <Compile Include="MinOperationConvertionStrings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="questions\AssemblyLine.txt" />
     <Content Include="questions\CoinChange.txt" />
     <Content Include="questions\CuttingRod.txt" />
+    <Content Include="questions\MaximumSumIncreasing.txt" />
     <Content Include="questions\MinCostPath.txt" />
     <Compile Include="SubsetSum.cs" />
     <Compile Include="UglyNum.cs" />
@@ -69,7 +73,9 @@
   <ItemGroup>
     <Content Include="questions\LongestIncreasingSequence.txt" />
     <Content Include="questions\MaximumSubSquareMatrix.txt" />
+    <Content Include="questions\MinimumNumberJump.txt" />
     <Content Include="questions\MinOperationConvertionString.txt" />
+    <Content Include="questions\SubsetSum.txt" />
     <Content Include="questions\UglyNum.txt" />
     <Content Include="questions\LargestSumContiguousSubArray.txt" />
     <Content Include="questions\LongestSequenceProblem.txt" />
