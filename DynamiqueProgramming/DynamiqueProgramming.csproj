@@ -53,6 +53,8 @@
     <Compile Include="LongestSubSequence.cs" />
     <Compile Include="LongestRepeatedSequence.cs" />
     <Compile Include="LongestCommonSequence.cs" />
+    <Compile Include="MaximumLengthChainPairs.cs" />
+    <Compile Include="MaximumSumIncreasing.cs" />
     <Compile Include="MaxiumSubSquareMatrix.cs" />
     <Compile Include="MinCost.cs" />
     <Compile Include="MinimumNumberJump.cs" />
@@ -62,6 +64,7 @@
     <Content Include="questions\AssemblyLine.txt" />
     <Content Include="questions\CoinChange.txt" />
     <Content Include="questions\CuttingRod.txt" />
+    <Content Include="questions\MaximumLengthChainPairs.txt" />
     <Content Include="questions\MaximumSumIncreasing.txt" />
     <Content Include="questions\MinCostPath.txt" />
     <Compile Include="SubsetSum.cs" />

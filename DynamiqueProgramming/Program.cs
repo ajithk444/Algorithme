@@ -37,7 +37,11 @@ namespace DynamiqueProgramming
 
             //MinimumNumberJump.Start();
 
-            AssemblyLine.start();
+            //AssemblyLine.start();
+
+            //MaximumSumIncreasing.Start();
+
+            MaximumLengthChainPairs.Start();
 
             Console.ReadKey();
         }
