@@ -41,7 +41,11 @@ namespace DynamiqueProgramming
 
             //MaximumSumIncreasing.Start();
 
-            MaximumLengthChainPairs.Start();
+            //MaximumLengthChainPairs.Start();
+
+            //CountAllPossiblePaths.Start(3, 3);
+
+            LongestCommonSubstring.GetLCSubstring("zxabcdezy", "yzabcdezxdf");
 
             Console.ReadKey();
         }
