@@ -45,7 +45,9 @@ namespace DynamiqueProgramming
 
             //CountAllPossiblePaths.Start(3, 3);
 
-            LongestCommonSubstring.GetLCSubstring("zxabcdezy", "yzabcdezxdf");
+            //LongestCommonSubstring.GetLCSubstring("zxabcdezy", "yzabcdezxdf");
+
+            CatalanNumber.Start(5);
 
             Console.ReadKey();
         }

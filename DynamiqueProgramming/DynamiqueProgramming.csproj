@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AssemblyLine.cs" />
     <Compile Include="BinominalCoefficient.cs" />
+    <Compile Include="CatalanNumber.cs" />
     <Compile Include="CoinChange.cs" />
     <Compile Include="CountAllPossiblePaths.cs" />
     <Compile Include="CuttingRod.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="questions\AssemblyLine.txt" />
+    <Content Include="questions\CatalanNumber.txt" />
     <Content Include="questions\CoinChange.txt" />
     <Content Include="questions\CountAllPossiblePaths.txt" />
     <Content Include="questions\CuttingRod.txt" />
