@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace DynamiqueProgramming
 {
@@ -47,7 +48,15 @@ namespace DynamiqueProgramming
 
             //LongestCommonSubstring.GetLCSubstring("zxabcdezy", "yzabcdezxdf");
 
-            CatalanNumber.Start(5);
+            //CatalanNumber.Start(5);
+
+            //NumberReachScore.Start(20);
+
+            //BellNumber.Start(6);
+
+            //FindEquationSolution.start(new int[] {2,2,5,4});
+
+            CountEvenLengthBinaryWithSameSum.Start(3);
 
             Console.ReadKey();
         }
