@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using DynamiqueProgramming.Simple;
 
 namespace DynamiqueProgramming
 {
@@ -56,7 +58,20 @@ namespace DynamiqueProgramming
 
             //FindEquationSolution.start(new int[] {2,2,5,4});
 
-            CountEvenLengthBinaryWithSameSum.Start(3);
+            //CountEvenLengthBinaryWithSameSum.Start(3);
+
+            //MinimumCostFillWeight.Start(new int[] { 1, 10, 4, 50, 100 });
+
+            //ChoiceOfArea.Start(new int[] { 20, 8, 3, 2, -5, -10, -20, 5 });
+
+            // int[,] nums = new int[,]
+            // {
+            //     { 9, 6, 5, 2 },
+            //     { 8, 7, 6, 5 },
+            //     { 7, 3, 1, 6 },
+            //     { 1, 1, 1, 7 }
+            // };
+            // FindMaximumLengthSnake.Start(nums);
 
             Console.ReadKey();
         }
