@@ -1,0 +1,6 @@
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\PatternSearching\bin\Debug\PatternSearching.exe.config
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\PatternSearching\bin\Debug\PatternSearching.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\PatternSearching\bin\Debug\PatternSearching.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\PatternSearching\obj\Debug\PatternSearching.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\PatternSearching\obj\Debug\PatternSearching.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\PatternSearching\obj\Debug\PatternSearching.csprojResolveAssemblyReference.cache

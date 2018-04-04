@@ -21,6 +21,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DynamiqueProgramming", "Dyn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamiqueProgramming", "DynamiqueProgramming\DynamiqueProgramming.csproj", "{935F300F-6795-4951-9C80-9C76382BD5FC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PatternSearching", "PatternSearching", "{9A8F19B2-32B7-43AA-9B2C-C8D1B241F2B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternSearching", "PatternSearching\PatternSearching.csproj", "{AAC4522F-FEA4-4A7A-BE2F-F9FCF7661D0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collection", "Collection\Collection.csproj", "{BA3E048E-5D0B-4B55-9B51-D9A8B5D20BED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +57,14 @@ Global
 		{935F300F-6795-4951-9C80-9C76382BD5FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{935F300F-6795-4951-9C80-9C76382BD5FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{935F300F-6795-4951-9C80-9C76382BD5FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAC4522F-FEA4-4A7A-BE2F-F9FCF7661D0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC4522F-FEA4-4A7A-BE2F-F9FCF7661D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC4522F-FEA4-4A7A-BE2F-F9FCF7661D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC4522F-FEA4-4A7A-BE2F-F9FCF7661D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA3E048E-5D0B-4B55-9B51-D9A8B5D20BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3E048E-5D0B-4B55-9B51-D9A8B5D20BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA3E048E-5D0B-4B55-9B51-D9A8B5D20BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3E048E-5D0B-4B55-9B51-D9A8B5D20BED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,5 +76,6 @@ Global
 		{180F3DE8-5011-4D61-90E1-34835B2CDCFE} = {E1DF59D9-4CBA-4525-8C6A-BC87A79E0B7F}
 		{2C0D34EF-DCBB-40F9-8E10-F78D122FFBE9} = {3DAB5719-A4EC-4313-960B-618888792FCC}
 		{935F300F-6795-4951-9C80-9C76382BD5FC} = {580F625D-77A0-4BBF-B5DA-94F8D1DEF470}
+		{AAC4522F-FEA4-4A7A-BE2F-F9FCF7661D0F} = {9A8F19B2-32B7-43AA-9B2C-C8D1B241F2B3}
 	EndGlobalSection
 EndGlobal

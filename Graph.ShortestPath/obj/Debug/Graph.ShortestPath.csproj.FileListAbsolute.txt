@@ -3,3 +3,5 @@ C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.ShortestP
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.ShortestPath\obj\Debug\Graph.ShortestPath.exe
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.ShortestPath\obj\Debug\Graph.ShortestPath.pdb
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.ShortestPath\obj\Debug\Graph.ShortestPath.csprojResolveAssemblyReference.cache
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.ShortestPath\bin\Debug\Graph.Base.dll
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.ShortestPath\bin\Debug\Graph.Base.pdb
