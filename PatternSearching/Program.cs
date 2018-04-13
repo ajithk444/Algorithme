@@ -10,7 +10,13 @@ namespace PatternSearching
     {
         static void Main(string[] args)
         {
-            KMPSearching.Start("AABFAAAAB", "AAAABFAAAABEFMFAABFAAAAB");
+            //KMPSearching.Start("AABFAAAAB", "AAAABFAAAABEFMFAABFAAAAB");
+
+            //SuffixArray.Start("banana");
+
+            //AnagramSubstring.Start("AABAABFAA", "AAAABFAAAABEFMFAABFAAAAB");
+
+            PrintingGraph.Start();
 
             Console.Read();
         }
