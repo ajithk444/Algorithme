@@ -16,7 +16,9 @@ namespace PatternSearching
 
             //AnagramSubstring.Start("AABAABFAA", "AAAABFAAAABEFMFAABFAAAAB");
 
-            PrintingGraph.Start();
+            //PrintingGraph.Start();
+
+            PrintAllPossibleStrings.Start("ABC");
 
             Console.Read();
         }

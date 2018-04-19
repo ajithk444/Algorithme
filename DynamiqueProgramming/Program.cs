@@ -73,6 +73,8 @@ namespace DynamiqueProgramming
             // };
             // FindMaximumLengthSnake.Start(nums);
 
+            LongestPanlindromicSubstring.Start("forgeeksskeegfor");
+
             Console.ReadKey();
         }
     }

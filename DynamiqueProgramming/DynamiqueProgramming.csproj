@@ -59,6 +59,7 @@
     <Compile Include="Simple\LargestSumContiguousSubArray.cs" />
     <Compile Include="Simple\LongestCommonSubstring.cs" />
     <Compile Include="Simple\LongestIncreasingSequence.cs" />
+    <Compile Include="Simple\LongestPanlindromicSubstring.cs" />
     <Compile Include="Simple\LongestSubSequence.cs" />
     <Compile Include="Simple\LongestRepeatedSequence.cs" />
     <Compile Include="Simple\LongestCommonSequence.cs" />
