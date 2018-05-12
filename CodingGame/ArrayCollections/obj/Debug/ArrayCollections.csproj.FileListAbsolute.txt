@@ -1,0 +1,14 @@
+F:\NetFramework\C# code\CodingGame\ArrayCollections\bin\Debug\ArrayCollections.exe.config
+F:\NetFramework\C# code\CodingGame\ArrayCollections\bin\Debug\ArrayCollections.exe
+F:\NetFramework\C# code\CodingGame\ArrayCollections\bin\Debug\ArrayCollections.pdb
+F:\NetFramework\C# code\CodingGame\ArrayCollections\obj\Debug\ArrayCollections.csprojResolveAssemblyReference.cache
+F:\NetFramework\C# code\CodingGame\ArrayCollections\obj\Debug\ArrayCollections.exe
+F:\NetFramework\C# code\CodingGame\ArrayCollections\obj\Debug\ArrayCollections.pdb
+F:\NetFramework\C# code\CodingGame\ArrayCollections\obj\Debug\ArrayCollections.csproj.CoreCompileInputs.cache
+F:\Concours\ArrayCollections\bin\Debug\ArrayCollections.exe.config
+F:\Concours\ArrayCollections\bin\Debug\ArrayCollections.exe
+F:\Concours\ArrayCollections\bin\Debug\ArrayCollections.pdb
+F:\Concours\ArrayCollections\obj\Debug\ArrayCollections.csprojResolveAssemblyReference.cache
+F:\Concours\ArrayCollections\obj\Debug\ArrayCollections.csproj.CoreCompileInputs.cache
+F:\Concours\ArrayCollections\obj\Debug\ArrayCollections.exe
+F:\Concours\ArrayCollections\obj\Debug\ArrayCollections.pdb

@@ -1,0 +1,7 @@
+F:\NetFramework\C# code\CodingGame\GoogleCodeJam\bin\Debug\GoogleCodeJam.exe.config
+F:\NetFramework\C# code\CodingGame\GoogleCodeJam\bin\Debug\GoogleCodeJam.exe
+F:\NetFramework\C# code\CodingGame\GoogleCodeJam\bin\Debug\GoogleCodeJam.pdb
+F:\NetFramework\C# code\CodingGame\GoogleCodeJam\obj\Debug\GoogleCodeJam.csprojResolveAssemblyReference.cache
+F:\NetFramework\C# code\CodingGame\GoogleCodeJam\obj\Debug\GoogleCodeJam.csproj.CoreCompileInputs.cache
+F:\NetFramework\C# code\CodingGame\GoogleCodeJam\obj\Debug\GoogleCodeJam.exe
+F:\NetFramework\C# code\CodingGame\GoogleCodeJam\obj\Debug\GoogleCodeJam.pdb

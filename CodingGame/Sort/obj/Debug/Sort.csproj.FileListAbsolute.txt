@@ -1,0 +1,5 @@
+F:\NetFramework\C# code\CodingGame\Sort\bin\Debug\Sort.exe.config
+F:\NetFramework\C# code\CodingGame\Sort\bin\Debug\Sort.exe
+F:\NetFramework\C# code\CodingGame\Sort\bin\Debug\Sort.pdb
+F:\NetFramework\C# code\CodingGame\Sort\obj\Debug\Sort.exe
+F:\NetFramework\C# code\CodingGame\Sort\obj\Debug\Sort.pdb

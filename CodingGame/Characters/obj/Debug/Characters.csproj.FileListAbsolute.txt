@@ -1,0 +1,12 @@
+C:\Users\yiwei\Documents\Visual Studio 2013\Projects\CodingGame\Characters\bin\Debug\Characters.exe.config
+C:\Users\yiwei\Documents\Visual Studio 2013\Projects\CodingGame\Characters\bin\Debug\Characters.exe
+C:\Users\yiwei\Documents\Visual Studio 2013\Projects\CodingGame\Characters\bin\Debug\Characters.pdb
+C:\Users\yiwei\Documents\Visual Studio 2013\Projects\CodingGame\Characters\obj\Debug\Characters.csprojResolveAssemblyReference.cache
+C:\Users\yiwei\Documents\Visual Studio 2013\Projects\CodingGame\Characters\obj\Debug\Characters.exe
+C:\Users\yiwei\Documents\Visual Studio 2013\Projects\CodingGame\Characters\obj\Debug\Characters.pdb
+F:\NetFramework\C# code\CodingGame\Characters\bin\Debug\Characters.exe.config
+F:\NetFramework\C# code\CodingGame\Characters\obj\Debug\Characters.exe
+F:\NetFramework\C# code\CodingGame\Characters\obj\Debug\Characters.pdb
+F:\NetFramework\C# code\CodingGame\Characters\obj\Debug\Characters.csprojResolveAssemblyReference.cache
+F:\NetFramework\C# code\CodingGame\Characters\bin\Debug\Characters.exe
+F:\NetFramework\C# code\CodingGame\Characters\bin\Debug\Characters.pdb

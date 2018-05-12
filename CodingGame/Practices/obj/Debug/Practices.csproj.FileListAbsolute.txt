@@ -1,0 +1,6 @@
+F:\NetFramework\C# code\CodingGame\Practices\bin\Debug\Practices.exe.config
+F:\NetFramework\C# code\CodingGame\Practices\bin\Debug\Practices.exe
+F:\NetFramework\C# code\CodingGame\Practices\bin\Debug\Practices.pdb
+F:\NetFramework\C# code\CodingGame\Practices\obj\Debug\Practices.exe
+F:\NetFramework\C# code\CodingGame\Practices\obj\Debug\Practices.pdb
+F:\NetFramework\C# code\CodingGame\Practices\obj\Debug\Practices.csprojResolveAssemblyReference.cache
