@@ -18,11 +18,11 @@ using System.Text;
 
 namespace CSharpContestProject
 {
-    class Program
+    class Decode
     {
         public static int N;
         public static string[,] chars;
-        static void Main(string[] args)
+        static void Start(string[] args)
         {
             N = Convert.ToInt32(Console.ReadLine());
 
