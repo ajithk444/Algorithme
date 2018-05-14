@@ -42,7 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2017\Decode.cs" />
+    <Compile Include="2017\Demineur.cs" />
+    <Compile Include="2017\Dodecagone.cs" />
     <Compile Include="2017\SalesForceFloor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
