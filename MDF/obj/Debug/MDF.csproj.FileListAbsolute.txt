@@ -5,3 +5,10 @@ F:\Algorithme\Algorithme\MDF\obj\Debug\MDF.csprojResolveAssemblyReference.cache
 F:\Algorithme\Algorithme\MDF\obj\Debug\MDF.csproj.CoreCompileInputs.cache
 F:\Algorithme\Algorithme\MDF\obj\Debug\MDF.exe
 F:\Algorithme\Algorithme\MDF\obj\Debug\MDF.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\MDF\obj\Debug\MDF.csprojResolveAssemblyReference.cache
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\MDF\obj\Debug\MDF.csproj.CoreCompileInputs.cache
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\MDF\obj\Debug\MDF.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\MDF\obj\Debug\MDF.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\MDF\bin\Debug\MDF.exe.config
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\MDF\bin\Debug\MDF.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\MDF\bin\Debug\MDF.pdb

@@ -18,7 +18,7 @@ namespace CSharpContestProject
         static int H, L;
         static int startX, startY;
 
-        static void Main(string[] args)
+        static void Start(string[] args)
         {
             var input = new List<string>();
             string line;

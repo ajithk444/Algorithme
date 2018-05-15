@@ -20,7 +20,7 @@ namespace CSharpContestProject
 {
     class SalesForceFloor
     {
-        static void Main(string[] args)
+        static void Start(string[] args)
         {        
             int L = int.Parse(Console.ReadLine());
             int N = int.Parse(Console.ReadLine());
