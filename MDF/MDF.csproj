@@ -45,6 +45,7 @@
     <Compile Include="2017\Demineur.cs" />
     <Compile Include="2017\Dodecagone.cs" />
     <Compile Include="2017\SalesForceFloor.cs" />
+    <Compile Include="2017\Warrior.cs" />
     <Compile Include="2017\Spirale.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

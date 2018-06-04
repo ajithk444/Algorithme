@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace MDF._2017
 {
     class Spirale
@@ -18,26 +13,38 @@ namespace MDF._2017
             int cX = N / 2;
             int cY = N / 2;
             chars[cX, cY] = '#';
-            chars[cX-1, cY] = '#';
-            chars[cX-1, cY+1] = '#';
-            int lastX = cX - 1;
-            int lastY = cY + 1;
-            int cpX = lastX;
-            int cpY = lastY;
+            cY -= 1;
+            int[,] ds = {{ 1,0 }, { 0, 1 }, { -1, 0 }, { 0, -1 }};
+            int dir = 0;
 
-            while (Math.Abs(lastX - cX)<N/2)
+            if (N > 3)
             {
-                if(chars[lastX, lastY-1]=='#')
+                for (int i = 2; i <= N; i++)
                 {
-                    
-                }
-                else
-                {
-
+                    if (dir >= 4) dir %= 4;
+                    for (int h = 1; h <= i; h++)
+                    {
+                        chars[cX, cY] = '#';
+                        cX += ds[dir, 0];
+                        cY += ds[dir, 1];
+                    }
+                    dir++;
                 }
             }
+            else
+            {
+                chars[cX, cY] = '#';
+                chars[cX+1, cY] = '#';
+            }
 
-            Console.WriteLine(default(int));
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < N; j++)
+                {
+                    Console.Write(chars[i, j] == default(char) ? "=" : "#");
+                }
+                Console.WriteLine();
+            }
             Console.Read();
         }
     }
