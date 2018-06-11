@@ -6,7 +6,7 @@ namespace GoogleCodeJam
 {
     class CruiseCotnrol
     {
-        static void Main()
+        static void Start()
         {
             int t = Convert.ToInt32(Console.ReadLine());
 
@@ -42,7 +42,7 @@ namespace GoogleCodeJam
 
         private static void PrintResult(int i, double result)
         {
-            Console.Write("Case #" + (i + 1) + ": " + "{0:F6}", result);
+            Console.WriteLine("Case #" + (i + 1) + ": " + "{0:F6}", result);
         }
 
     }
