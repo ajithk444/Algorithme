@@ -5,3 +5,10 @@ F:\NetFramework\C# code\CodingGame\GoogleCodeJam\obj\Debug\CodeJam.csprojResolve
 F:\NetFramework\C# code\CodingGame\GoogleCodeJam\obj\Debug\CodeJam.csproj.CoreCompileInputs.cache
 F:\NetFramework\C# code\CodingGame\GoogleCodeJam\obj\Debug\GoogleCodeJam.exe
 F:\NetFramework\C# code\CodingGame\GoogleCodeJam\obj\Debug\GoogleCodeJam.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\GoogleCodeJam.exe.config
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\GoogleCodeJam.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\GoogleCodeJam.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\obj\Debug\CodeJam.csprojResolveAssemblyReference.cache
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\obj\Debug\CodeJam.csproj.CoreCompileInputs.cache
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\obj\Debug\GoogleCodeJam.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\obj\Debug\GoogleCodeJam.pdb
