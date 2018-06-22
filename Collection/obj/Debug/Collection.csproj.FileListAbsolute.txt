@@ -4,3 +4,4 @@ C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Collection\bin\
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Collection\obj\Debug\Collection.csprojResolveAssemblyReference.cache
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Collection\obj\Debug\Collection.exe
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Collection\obj\Debug\Collection.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Collection\obj\Debug\Collection.csproj.CoreCompileInputs.cache
