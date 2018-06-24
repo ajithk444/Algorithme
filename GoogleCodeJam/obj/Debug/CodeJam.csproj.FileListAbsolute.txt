@@ -12,3 +12,10 @@ C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\o
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\obj\Debug\CodeJam.csproj.CoreCompileInputs.cache
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\obj\Debug\GoogleCodeJam.exe
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\obj\Debug\GoogleCodeJam.pdb
+F:\Algorithme\Algorithme\GoogleCodeJam\bin\Debug\GoogleCodeJam.exe.config
+F:\Algorithme\Algorithme\GoogleCodeJam\bin\Debug\GoogleCodeJam.exe
+F:\Algorithme\Algorithme\GoogleCodeJam\bin\Debug\GoogleCodeJam.pdb
+F:\Algorithme\Algorithme\GoogleCodeJam\obj\Debug\CodeJam.csprojResolveAssemblyReference.cache
+F:\Algorithme\Algorithme\GoogleCodeJam\obj\Debug\CodeJam.csproj.CoreCompileInputs.cache
+F:\Algorithme\Algorithme\GoogleCodeJam\obj\Debug\GoogleCodeJam.exe
+F:\Algorithme\Algorithme\GoogleCodeJam\obj\Debug\GoogleCodeJam.pdb
