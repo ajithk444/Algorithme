@@ -47,6 +47,7 @@
     <Compile Include="2018\Question2.cs" />
     <Compile Include="2018\Question1.cs" />
     <Compile Include="2018\RoundingError.cs" />
+    <Compile Include="2018\GoGopher.cs" />
     <Compile Include="2018\SavingTheUniverse.cs" />
     <Compile Include="2018\CruiseControl.cs" />
     <Compile Include="2018\SenateEvacuation.cs" />
