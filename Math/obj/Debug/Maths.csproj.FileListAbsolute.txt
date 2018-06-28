@@ -1,7 +1,7 @@
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Math\obj\Debug\Maths.csprojResolveAssemblyReference.cache
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Math\obj\Debug\Maths.csproj.CoreCompileInputs.cache
-C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Math\bin\Debug\Math.exe.config
-C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Math\bin\Debug\Math.exe
-C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Math\bin\Debug\Math.pdb
-C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Math\obj\Debug\Math.exe
-C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Math\obj\Debug\Math.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Math\bin\Debug\Maths.exe.config
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Math\bin\Debug\Maths.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Math\bin\Debug\Maths.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Math\obj\Debug\Maths.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Math\obj\Debug\Maths.pdb
