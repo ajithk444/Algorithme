@@ -46,7 +46,7 @@
     <Compile Include="Geometric\Point.cs" />
     <Compile Include="Geometric\Polygon.cs" />
     <Compile Include="Geometric\Range.cs" />
-    <Compile Include="Geometric\TwoLineIntersect.cs" />
+    <Compile Include="Geometric\LinePointIntersect.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
