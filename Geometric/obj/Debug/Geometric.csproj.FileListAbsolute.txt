@@ -1,0 +1,11 @@
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Geometric\bin\Debug\Geometric.exe.config
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Geometric\bin\Debug\Geometric.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Geometric\bin\Debug\Geometric.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Geometric\bin\Debug\Maths.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Geometric\bin\Debug\Maths.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Geometric\bin\Debug\Maths.exe.config
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Geometric\obj\Debug\Geometric.csprojResolveAssemblyReference.cache
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Geometric\obj\Debug\Geometric.csproj.CoreCompileInputs.cache
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Geometric\obj\Debug\Geometric.csproj.CopyComplete
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Geometric\obj\Debug\Geometric.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Geometric\obj\Debug\Geometric.pdb
