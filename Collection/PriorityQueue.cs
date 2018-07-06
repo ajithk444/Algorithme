@@ -12,6 +12,15 @@ namespace Collection
             this.data = new List<T>();
         }
 
+        public PriorityQueue(T[] array)
+        {
+            this.data = new List<T>();
+            foreach (var item in array)
+            {
+                this.Enqueue(item);
+            }
+        }
+
         public void Enqueue(T item)
         {
             data.Add(item);

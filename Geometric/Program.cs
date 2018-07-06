@@ -11,8 +11,19 @@ namespace Geometric
     {
         static void Main(string[] args)
         {
-            var ps = new Point[] { new Point(-1, 1), new Point(0, 0), new Point(1, 1), new Point(2, 2), new Point(3, 3), new Point(3, 1) };
-            Console.WriteLine(MaximunPointsInOneLine.GetMax(ps));
+            //var ps = new Point[] { new Point(-1, 1), new Point(0, 0), new Point(1, 1), new Point(2, 2), new Point(3, 3), new Point(3, 1) };
+            //Console.WriteLine(MaximunPointsInOneLine.GetMax(ps));
+
+            var ps = new Point[] {
+                new Point(0, 3), new Point(1, 1),
+                new Point(2, 2), new Point(4, 4),
+                new Point(0, 0), new Point(1, 2),
+                new Point(3, 1), new Point(3, 3),
+            };
+            foreach(var item in FindTheClosestPathOfPoints.GetClosestPath(ps))
+            {
+                Console.WriteLine(item.ToString());
+            }
 
             Console.Read();
         }

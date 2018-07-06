@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FindTheClosestPathOfPoints.cs" />
     <Compile Include="MaximunPointsInOneLine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -50,6 +51,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="questions\FindTheClosestPathOfPoints.txt" />
     <Content Include="questions\MaximunPointsInOneLine.txt" />
   </ItemGroup>
   <ItemGroup>
