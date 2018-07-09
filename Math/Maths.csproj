@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Geometric\OrientationTreePoints.cs" />
     <Compile Include="Geometric\Line.cs" />
+    <Compile Include="Geometric\Point3D.cs" />
     <Compile Include="Geometric\Point.cs" />
     <Compile Include="Geometric\Polygon.cs" />
     <Compile Include="Geometric\Range.cs" />

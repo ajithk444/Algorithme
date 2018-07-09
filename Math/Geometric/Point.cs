@@ -1,4 +1,6 @@
-﻿namespace Maths.Geometric
+﻿using System;
+
+namespace Maths.Geometric
 {
     public class Point
     {
@@ -10,6 +12,18 @@
         {
             X = x;
             Y = y;
+        }
+
+        public static Point RotatePoint2D(Point pointToRotate, Point centerPoint, double angleInDegrees)
+        {
+            double angleInRadians = angleInDegrees * (Math.PI / 180);
+            double cosTheta = Math.Cos(angleInRadians);
+            double sinTheta = Math.Sin(angleInRadians);
+            return new Point
+            (
+              cosTheta * (pointToRotate.X - centerPoint.X) - sinTheta * (pointToRotate.Y - centerPoint.Y) + centerPoint.X,
+              sinTheta * (pointToRotate.X - centerPoint.X) + cosTheta * (pointToRotate.Y - centerPoint.Y) + centerPoint.Y
+            );
         }
 
         public override string ToString()

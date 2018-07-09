@@ -14,10 +14,4 @@ public class Point2D
         X = x;
         Y = y;
     }
-
-
-    public int DistanceInf(Point2D other)
-    {
-        return Math.Max(Math.Abs(this.X - other.X), Math.Abs(this.Y - other.Y));
-    }
 }

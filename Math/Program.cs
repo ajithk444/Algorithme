@@ -54,11 +54,6 @@ namespace Maths
             //Point p = new Point(4, 0);
             //Console.WriteLine(LPI.GetPointToLineDistance(new Line(1, -1, 0), p));
 
-            Point p1 = new Point(1, 1);
-            Point p2 = new Point(4, 4);
-            Point p3 = new Point(0, 2);
-            Point p4 = new Point(2, 0);
-
             //Point p1 = new Point(1, 14);
             //Point p2 = new Point(2, 27);
             //Point p3 = new Point(3, 40);
@@ -68,6 +63,16 @@ namespace Maths
             //var ps = new Point[] { p1, p2, p3, p4};
             //var line = LPI.GetBestApproximateLine(ps);
             //Console.WriteLine(line);
+
+            //var ps = new Point(1, 2);
+            //var cP = new Point(0, 0);
+            //Console.WriteLine(Point.RotatePoint2D(ps, cP, 90).ToString());
+            //Console.WriteLine(Point.RotatePoint2D(ps, cP, 180).ToString());
+
+            var ps = new Point3D(1, 1, 1);
+            var cP = new Point3D(0, 0, 0);
+            Console.WriteLine(Point3D.RotatePoint3D(ps, cP, 1, 90).ToString());
+            Console.WriteLine(Point.RotatePoint2D(ps, cP, 180).ToString());
 
             Console.Read();
         }
