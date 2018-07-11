@@ -69,10 +69,20 @@ namespace Maths
             //Console.WriteLine(Point.RotatePoint2D(ps, cP, 90).ToString());
             //Console.WriteLine(Point.RotatePoint2D(ps, cP, 180).ToString());
 
-            var ps = new Point3D(1, 1, 1);
-            var cP = new Point3D(0, 0, 0);
-            Console.WriteLine(Point3D.RotatePoint3D(ps, cP, 1, 90).ToString());
-            Console.WriteLine(Point.RotatePoint2D(ps, cP, 180).ToString());
+            //var ps = new Point3D(1, 1, 1);
+            //var cP = new Point3D(0, 0, 0);
+            //Console.WriteLine(Point3D.RotatePoint3D(ps, cP, 0, 90).ToString());
+            //Console.WriteLine(Point3D.RotatePoint3D(ps, cP, 1, 180).ToString());
+
+            Point p1 = new Point(-3, -2);
+            Point p2 = new Point(-1, 0);
+            Point p3 = new Point(-1, 2);
+            Point p4 = new Point(1, 2);
+            Point p5 = new Point(3, 4);
+
+            var ps = new Point[] { p1, p2, p3, p4, p5 };
+
+            Console.WriteLine(LPI.GetMininumDistancesToPointInLineMethodDerive(ps, new Line(1, -1, -3)).ToString());
 
             Console.Read();
         }

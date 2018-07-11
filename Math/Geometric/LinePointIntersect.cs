@@ -1,6 +1,7 @@
 ﻿namespace Maths.Geometric
 {
     using System;
+    using System.Linq;
 
     public class LPI
     {
@@ -130,6 +131,33 @@
             c = (sum_y - m * sum_x) / n;
 
             return new Line(m,-1,c);
+        }
+
+        public static Point GetMininumDistancesToPointInLineMethodDerive(Point[] ps, Line line)
+        {
+            double x, y;
+            int n = ps.Length;
+            double a, b;
+            if (line.B != 0)
+            {
+                a = -line.A / line.B;
+                b = -line.C / line.B;
+
+                double sumX = ps.Select(p => p.X).Sum();
+                double sumY = ps.Select(p => p.Y).Sum();
+                x = (sumY*a+sumX - n *a* b) / (n * (a * a + 1));
+                y = a * x + b;
+                return new Point(x, y);
+            }
+
+            if(line.B == 0)
+            {
+                x = -line.C / line.A;
+                y = ps.Select(p => p.Y).Average();
+                return new Point(x, y);
+            }
+
+            return null;
         }
 
     }

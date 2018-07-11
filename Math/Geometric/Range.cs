@@ -24,5 +24,17 @@ namespace Maths.Geometric
 
             return false;
         }
-    }
+
+        public Range<T> Intersect(Range<T> other)
+        {
+            T min = this.Min.CompareTo(other.Min) > 0 ? this.Min : other.Min;
+            T max = this.Max.CompareTo(other.Max) < 0 ? this.Max : other.Max;
+            if (min.CompareTo(max) <= 0)
+            {
+                return new Range<T>(min, max) ;
+            }
+
+            return null;
+        }
+     }
 }

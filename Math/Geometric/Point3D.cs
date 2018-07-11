@@ -30,27 +30,28 @@ namespace Maths.Geometric
             double sinTheta = Math.Sin(angleInRadians);
             double x = pointToRotate.X - centerPoint.X;
             double y = pointToRotate.Y - centerPoint.Y;
-            double z = pointToRotate.Z - centerPoint.Z; 
+            double z = pointToRotate.Z - centerPoint.Z;
+            double x1, y1, z1;
 
             if (dir == 0)
             {
-                x = cosTheta * x -sinTheta * y + centerPoint.X;
-                y = sinTheta * x + cosTheta * y + centerPoint.Y;
-                z = pointToRotate.Z + centerPoint.Z;
+                x1 = cosTheta * x -sinTheta * y + centerPoint.X;
+                y1 = sinTheta * x + cosTheta * y + centerPoint.Y;
+                z1 = pointToRotate.Z + centerPoint.Z;
             }else if (dir == 1)
             {
-                y = cosTheta * y - sinTheta * z + centerPoint.Y;
-                z = sinTheta * y + cosTheta * z + centerPoint.Z;
-                x = pointToRotate.X + centerPoint.X;
+                y1 = cosTheta * y - sinTheta * z + centerPoint.Y;
+                z1 = sinTheta * y + cosTheta * z + centerPoint.Z;
+                x1 = pointToRotate.X + centerPoint.X;
             }
             else
             {
-                z = cosTheta * z - sinTheta * x + centerPoint.Z;
-                x = sinTheta * z + cosTheta * x + centerPoint.X;
-                y = pointToRotate.Z + centerPoint.Z;
+                z1 = cosTheta * z - sinTheta * x + centerPoint.Z;
+                x1 = sinTheta * z + cosTheta * x + centerPoint.X;
+                y1 = pointToRotate.Z + centerPoint.Z;
             }
 
-            return new Point3D(x, y, z);
+            return new Point3D(x1, y1, z1);
         }
 
         public override string ToString()
