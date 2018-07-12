@@ -19,3 +19,10 @@ F:\Algorithme\Algorithme\GoogleCodeJam\obj\Debug\CodeJam.csprojResolveAssemblyRe
 F:\Algorithme\Algorithme\GoogleCodeJam\obj\Debug\CodeJam.csproj.CoreCompileInputs.cache
 F:\Algorithme\Algorithme\GoogleCodeJam\obj\Debug\GoogleCodeJam.exe
 F:\Algorithme\Algorithme\GoogleCodeJam\obj\Debug\GoogleCodeJam.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\Geometric.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\Maths.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\Geometric.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\Geometric.exe.config
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\Maths.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\Maths.exe.config
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\obj\Debug\CodeJam.csproj.CopyComplete

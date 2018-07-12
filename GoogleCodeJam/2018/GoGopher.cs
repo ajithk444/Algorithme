@@ -7,7 +7,7 @@ namespace GoogleCodeJam
     {
         public static int[,] grid = new int[4, 68];
 
-        public static void Main()
+        public static void Start()
         {
             int t = Convert.ToInt32(Console.ReadLine());
 

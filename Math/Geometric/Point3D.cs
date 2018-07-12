@@ -8,11 +8,14 @@ namespace Maths.Geometric
         public double Y { get; set; }
         public double Z { get; set; }
 
-        public Point3D(double x, double y, double z)
+        public bool UsePrecision { get; set; }
+        public int Precision { get; set; }
+
+        public Point3D(double x, double y, double z, int precision=6, bool usePrecision=false)
         {
-            X = x;
-            Y = y;
-            Z = z;
+            X = usePrecision ? Math.Round(x, precision, MidpointRounding.AwayFromZero) : x;
+            Y = usePrecision ? Math.Round(y, precision, MidpointRounding.AwayFromZero) : y;
+            Z = usePrecision ? Math.Round(z, precision, MidpointRounding.AwayFromZero) : z;
         }
 
         /// <summary>
@@ -23,9 +26,9 @@ namespace Maths.Geometric
         /// <param name="dir">The ratation direction, 0 is Z axis, 1 is x axis, 2 is y axis </param>
         /// <param name="angleInDegrees"></param>
         /// <returns>3D point after rotation</returns>
-        public static Point3D RotatePoint3D(Point3D pointToRotate, Point3D centerPoint, int dir, double angleInDegrees)
+        public static Point3D RotatePoint3D(Point3D pointToRotate, Point3D centerPoint, int dir, double angleInDegrees, bool isAngle=false)
         {
-            double angleInRadians = angleInDegrees * (Math.PI / 180);
+            double angleInRadians = isAngle ? angleInDegrees * (Math.PI / 180) : angleInDegrees;
             double cosTheta = Math.Cos(angleInRadians);
             double sinTheta = Math.Sin(angleInRadians);
             double x = pointToRotate.X - centerPoint.X;
