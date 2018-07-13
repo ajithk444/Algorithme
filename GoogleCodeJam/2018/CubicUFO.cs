@@ -1,10 +1,71 @@
-﻿using Maths.Geometric;
-using System;
+﻿using System;
 using System.Globalization;
-using System.Linq;
 
 namespace GoogleCodeJam
 {
+    public class Point3D
+    {
+        public double X { get; set; }
+        public double Y { get; set; }
+        public double Z { get; set; }
+
+        public bool UsePrecision { get; set; }
+        public int Precision { get; set; }
+
+        public Point3D(double x, double y, double z, int precision = 6, bool usePrecision = false)
+        {
+            X = usePrecision ? Math.Round(x, precision, MidpointRounding.AwayFromZero) : x;
+            Y = usePrecision ? Math.Round(y, precision, MidpointRounding.AwayFromZero) : y;
+            Z = usePrecision ? Math.Round(z, precision, MidpointRounding.AwayFromZero) : z;
+        }
+
+        /// <summary>
+        /// 3D rotation matrix
+        /// </summary>
+        /// <param name="pointToRotate"></param>
+        /// <param name="centerPoint"></param>
+        /// <param name="dir">The ratation direction, 0 is Z axis, 1 is x axis, 2 is y axis </param>
+        /// <param name="angleInDegrees"></param>
+        /// <returns>3D point after rotation</returns>
+        public static Point3D RotatePoint3D(Point3D pointToRotate, Point3D centerPoint, int dir, double angleInDegrees, bool isAngle = false)
+        {
+            double angleInRadians = isAngle ? angleInDegrees * (Math.PI / 180) : angleInDegrees;
+            double cosTheta = Math.Cos(angleInRadians);
+            double sinTheta = Math.Sin(angleInRadians);
+            double x = pointToRotate.X - centerPoint.X;
+            double y = pointToRotate.Y - centerPoint.Y;
+            double z = pointToRotate.Z - centerPoint.Z;
+            double x1, y1, z1;
+
+            if (dir == 0)
+            {
+                x1 = cosTheta * x - sinTheta * y + centerPoint.X;
+                y1 = sinTheta * x + cosTheta * y + centerPoint.Y;
+                z1 = pointToRotate.Z + centerPoint.Z;
+            }
+            else if (dir == 1)
+            {
+                y1 = cosTheta * y - sinTheta * z + centerPoint.Y;
+                z1 = sinTheta * y + cosTheta * z + centerPoint.Z;
+                x1 = pointToRotate.X + centerPoint.X;
+            }
+            else
+            {
+                z1 = cosTheta * z - sinTheta * x + centerPoint.Z;
+                x1 = sinTheta * z + cosTheta * x + centerPoint.X;
+                y1 = pointToRotate.Z + centerPoint.Z;
+            }
+
+            return new Point3D(x1, y1, z1);
+        }
+
+        public override string ToString()
+        {
+            return this.X + " " + this.Y + " " + this.Z;
+        }
+    }
+
+
     public class CubicUFO
     {
         public static void Main()
@@ -32,10 +93,12 @@ namespace GoogleCodeJam
 
                 if (ar <= aZrotationMax)
                 {
-                    double degree =Math.PI/4 - Math.Acos(ar / Math.Sqrt(2));
+                    double degree = Math.PI / 4 - Math.Acos(ar / Math.Sqrt(2));
+
                     A1 = Point3D.RotatePoint3D(A, centerP, 0, degree);
                     B1 = Point3D.RotatePoint3D(B, centerP, 0, degree);
                     C1 = Point3D.RotatePoint3D(C, centerP, 0, degree);
+
                     result = new Point3D[] {
                          GetMidPoint(A1,B1),
                          GetMidPoint(A1,C1),
@@ -52,7 +115,7 @@ namespace GoogleCodeJam
 
                     double degreeX = 0;
                     double dMin = 0;
-                    double dMax = Math.PI / 4;
+                    double dMax = Math.Asin(1/Math.Sqrt(3));
                     double caX = GetPolygonAreaRotationByAngle(centerP, A1, B1, C1, dMin);
                     double caXMax = GetPolygonAreaRotationByAngle(centerP, A1, B1, C1, dMax);
                     if(caXMax == ar)
@@ -89,7 +152,7 @@ namespace GoogleCodeJam
 
                 Output(i + 1, result);
             }
-            Console.Read();
+            //Console.Read();
         }
 
         private static Point3D GetMidPoint(Point3D A, Point3D B)
@@ -107,7 +170,7 @@ namespace GoogleCodeJam
 
             double[] ax = new double[] { A2.X, B2.X, C2.X };
             double[] az = new double[] { A2.Z, B2.Z, C2.Z };
-            double area = Math.Round(2 * Polygon.GetPolygonArea(ax, az, 3), 6, MidpointRounding.AwayFromZero);
+            double area = Math.Round(2 * GetPolygonArea(ax, az, 3), 8, MidpointRounding.AwayFromZero);
             return area;
         }
 
