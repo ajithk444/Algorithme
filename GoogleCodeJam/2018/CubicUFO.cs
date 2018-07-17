@@ -68,7 +68,7 @@ namespace GoogleCodeJam
 
     public class CubicUFO
     {
-        public static void Main()
+        public static void Start()
         {
             int t = Convert.ToInt32(Console.ReadLine());
 

@@ -26,3 +26,4 @@ C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\b
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\Maths.pdb
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\Maths.exe.config
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\obj\Debug\CodeJam.csproj.CopyComplete
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\test\test.txt

@@ -45,7 +45,7 @@
     <Compile Include="2018\BathroomStalls.cs" />
     <Compile Include="2018\Question3.cs" />
     <Compile Include="2018\Question2.cs" />
-    <Compile Include="2018\Question1.cs" />
+    <Compile Include="2018\WaffleChoppers.cs" />
     <Compile Include="2018\RoundingError.cs" />
     <Compile Include="2018\GoGopher.cs" />
     <Compile Include="2018\CubicUFO.cs" />
@@ -71,6 +71,11 @@
       <Project>{65d5dbee-996e-4e5e-8e05-7e3f0767e7c3}</Project>
       <Name>Maths</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="test\test.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
