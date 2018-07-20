@@ -7,7 +7,7 @@ namespace CodeJam
 {
     public class WaffleChoppers
     {
-        public static void Main()
+        public static void Start()
         {
 #if false
             System.IO.StreamReader input = new System.IO.StreamReader(@"test\test.txt");

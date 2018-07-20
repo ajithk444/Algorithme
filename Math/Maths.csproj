@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Geometric\MergeIntervals.cs" />
     <Compile Include="Geometric\OrientationTreePoints.cs" />
     <Compile Include="Geometric\Line.cs" />
     <Compile Include="Geometric\Point3D.cs" />

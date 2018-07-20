@@ -1,5 +1,6 @@
 ﻿using Maths.Geometric;
 using System;
+using System.Collections.Generic;
 
 namespace Maths
 {
@@ -74,17 +75,30 @@ namespace Maths
             //Console.WriteLine(Point3D.RotatePoint3D(ps, cP, 0, 90).ToString());
             //Console.WriteLine(Point3D.RotatePoint3D(ps, cP, 1, 180).ToString());
 
-            Point p1 = new Point(-3, -2);
-            Point p2 = new Point(-1, 0);
-            Point p3 = new Point(-1, 2);
-            Point p4 = new Point(1, 2);
-            Point p5 = new Point(3, 4);
+            //Point p1 = new Point(-3, -2);
+            //Point p2 = new Point(-1, 0);
+            //Point p3 = new Point(-1, 2);
+            //Point p4 = new Point(1, 2);
+            //Point p5 = new Point(3, 4);
 
-            var ps = new Point[] { p1, p2, p3, p4, p5 };
+            //var ps = new Point[] { p1, p2, p3, p4, p5 };
 
-            Console.WriteLine(LPI.GetMininumDistancesToPointInLineMethodDerive(ps, new Line(1, -1, -3)).ToString());
+            //Console.WriteLine(LPI.GetMininumDistancesToPointInLineMethodDerive(ps, new Line(1, -1, -3)).ToString());
 
-            Console.Read();
+            //List<Interval> intervals = new List<Interval>()
+            //{
+            //    new Interval(1,4),
+            //    new Interval(1,2),
+            //    new Interval(5,9),
+            //    new Interval(3,4.5)
+            //};
+
+            //foreach (var item in MergeIntervals.IntervalsMerge(intervals))
+            //{
+            //    Console.WriteLine(item.ToString());
+            //}
+
+            //Console.Read();
         }
     }
 }

@@ -43,7 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="2018\BathroomStalls.cs" />
-    <Compile Include="2018\Question3.cs" />
+    <Compile Include="2018\BitParty.cs" />
+    <Compile Include="2018\EdgyBaking.cs" />
     <Compile Include="2018\Question2.cs" />
     <Compile Include="2018\WaffleChoppers.cs" />
     <Compile Include="2018\RoundingError.cs" />
@@ -53,6 +54,8 @@
     <Compile Include="2018\CruiseControl.cs" />
     <Compile Include="2018\SenateEvacuation.cs" />
     <Compile Include="2018\GuessNumber.cs" />
+    <Compile Include="Model\ModelNumsLinesChars.cs" />
+    <Compile Include="Model\ModelNumsLinesNums.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="2018\TroubleSort.cs" />
   </ItemGroup>
@@ -73,7 +76,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="test\test.txt">
+    <EmbeddedResource Include="test\WaffleChopper.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="test\BitParty.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="test\EdgyBaking.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
