@@ -97,8 +97,7 @@ namespace Maths
             //{
             //    Console.WriteLine(item.ToString());
             //}
-
-            //Console.Read();
+            Console.Read();
         }
     }
 }

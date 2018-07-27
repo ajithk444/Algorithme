@@ -1,27 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using input = System.Console;
 
 namespace CodeJam
 {
     public class RoundingError
     {
-        public class Info
+        public static void Main()
         {
-            public int Index;
-            public int Value;
-        }
-        public static void Start()
-        {
-            int t = Convert.ToInt32(Console.ReadLine());
+#if true
+            System.IO.StreamReader input = new System.IO.StreamReader(@"test\RoundingError.txt");
+#endif
+            int t = Convert.ToInt32(input.ReadLine());
 
             int[][] Ns = new int[t][];
             int[][] numss = new int[t][];
 
             for (int i = 0; i < t; i++)
             {
-                Ns[i] = Console.ReadLine().Split(' ').Select(s => Convert.ToInt32(s)).ToArray();
-                numss[i] = Console.ReadLine().Split(' ').Select(s => Convert.ToInt32(s)).ToArray();
+                Ns[i] = input.ReadLine().Split(' ').Select(int.Parse).ToArray();
+                numss[i] = input.ReadLine().Split(' ').Select(int.Parse).ToArray();
             }
 
             for (int i = 0; i < t; i++)
@@ -29,97 +28,176 @@ namespace CodeJam
                 int N = Ns[i][0];
                 int L = Ns[i][1];
                 int[] nums = numss[i];
-                List<Info> infos = new List<Info>();
-                int left = N - nums.Sum();
-                int result = 0;
-                double full = 100.0;
+                List<double> higherScores = new List<double>();
+                PriorityQueue<double> lowerScores = new PriorityQueue<double>((a, b)=> { return Math.Sign((b - Math.Floor(b)) - (a - Math.Floor(a))); });
+                int left = N;
+                double result = 0;
+                double p = 100.0 / N;
 
                 for (int m = 0; m < nums.Length; m++)
                 {
-                    infos.Add(new Info());
-                    infos[m].Index=m;
-                    double r = (double)(nums[m]) / N * full;
-                    if (isAdd(r))
+                    left -= nums[m];
+                    double r = nums[m] * p;
+                    
+                    if (IsHigherScore(r))
                     {
-                        infos[m].Value++;
+                        higherScores.Add(r);
                     }
+                    else
+                    {
+                        lowerScores.Enqueue(r);
+                    } 
                 }
 
-                int temp = 1;
-                for (int h = 1; h <= N; h++)
+                while (left>0)
                 {
-                    double r = (double)(h) / N * full;
-                    if (!isAdd(r))
+                    if (lowerScores.Count() > 0)
                     {
-                        temp=h;
-                        break;
-                    }
-                }
-
-                var list = infos.OrderBy(s => s.Value).ToList();
-               
-                for (int m = 0; m < list.Count; m++)
-                {
-                    if (list[m].Value < temp && left >= list[m].Value)
-                    {
-                        double r = (double)(nums[list[m].Index] + list[m].Value) / N * full;
-                        result += (int)Math.Round(r, MidpointRounding.AwayFromZero);
-                        left -= list[m].Value;
-                    }
-                    else if(list[m].Value > temp && left>0)
-                    {
-                        if (left >= temp)
+                        double v = lowerScores.Dequeue();
+                        v += p;
+                        if (IsHigherScore(v))
                         {
-                            double r = (double)(temp) / N * full;
-                            result += (int)Math.Round(r, MidpointRounding.AwayFromZero);
-                            left -= temp;
-                            m--;
+                            higherScores.Add(v);
                         }
                         else
                         {
-                            double r = (double)(left) / N * full;
-                            result += (int)Math.Round(r, MidpointRounding.AwayFromZero);
-                            left=0;
+                            lowerScores.Enqueue(v);
                         }
                     }
                     else
                     {
-                        double r = (double)(nums[list[m].Index]) / N * full;
-                        result += (int)Math.Round(r, MidpointRounding.AwayFromZero);
+                        lowerScores.Enqueue(p);
                     }
+                    left--;
                 }
 
-                while (left > 0)
+                foreach (var r in higherScores)
                 {
-                    if (left >= temp)
-                    {
-                        double r = (double)(temp) / N * full;
-                        result += (int)Math.Round(r, MidpointRounding.AwayFromZero);
-                        left -= temp;
-                    }
-                    else
-                    {
-                        double r = (double)(left) / N * full;
-                        result += (int)Math.Round(r, MidpointRounding.AwayFromZero);
-                        left = 0;
-                    }
+                    result += Math.Round(r, MidpointRounding.AwayFromZero);
                 }
 
-                Output(i + 1, result);
+                foreach (var r in lowerScores.Data())
+                {
+                    result += Math.Round(r, MidpointRounding.AwayFromZero);
+                }
+
+                Output(i + 1, (int)result);
             }
+
+            Console.Read();
            
         }
 
-        public static bool isAdd(double num) {
-            return Math.Round(num, MidpointRounding.AwayFromZero) == Math.Floor(num);
+        public static bool IsHigherScore(double num) {
+            return num-Math.Floor(num)>=0.5;
         }
 
 
         public static void Output(int caseNum, int result)
         {
-            Console.Write("Case #" + caseNum + ": "+result);
+            input.Write("Case #" + caseNum + ": "+result);
  
-            Console.WriteLine();
+            input.WriteLine();
         }
     }
+        public class PriorityQueue<T> where T : IComparable<T>
+        {
+            private List<T> data;
+            private Func<T, T, int> CompareExpression { get; set; }
+
+            public PriorityQueue()
+            {
+                this.data = new List<T>();
+            }
+
+            public PriorityQueue(Func<T, T, int> compareExpression)
+            {
+                this.data = new List<T>();
+                this.CompareExpression = compareExpression;
+
+            }
+
+            public PriorityQueue(T[] array)
+            {
+                this.data = new List<T>();
+                foreach (var item in array)
+                {
+                    this.Enqueue(item);
+                }
+            }
+
+            public IReadOnlyCollection<T> Data(){
+                return this.data;
+            }
+
+            public void Enqueue(T item)
+            {
+                data.Add(item);
+                int ci = data.Count - 1; // child index; start at end
+                while (ci > 0)
+                {
+                    int pi = (ci - 1) / 2; // parent index
+                    if (this.Compare(data[ci], data[pi]) >= 0) break; // child item is larger than (or equal) parent so we're done
+                    T tmp = data[ci]; data[ci] = data[pi]; data[pi] = tmp;
+                    ci = pi;
+                }
+            }
+
+            public T Dequeue()
+            {
+                // assumes pq is not empty; up to calling code
+                int li = data.Count - 1; // last index (before removal)
+                T frontItem = data[0];   // fetch the front
+                data[0] = data[li];
+                data.RemoveAt(li);
+
+                --li; // last index (after removal)
+                int pi = 0; // parent index. start at front of pq
+                while (true)
+                {
+                    int ci = pi * 2 + 1; // left child index of parent
+                    if (ci > li) break;  // no children so done
+                    int rc = ci + 1;     // right child
+                    if (rc <= li && Compare(data[rc], data[ci]) < 0) // if there is a rc (ci + 1), and it is smaller than left child, use the rc instead
+                        ci = rc;
+                    if (Compare(data[pi], data[ci]) <= 0) break; // parent is smaller than (or equal to) smallest child so done
+                    T tmp = data[pi]; data[pi] = data[ci]; data[ci] = tmp; // swap parent and child
+                    pi = ci;
+                }
+                return frontItem;
+            }
+
+            public T Peek()
+            {
+                T frontItem = data[0];
+                return frontItem;
+            }
+
+            public int Count()
+            {
+                return data.Count;
+            }
+
+            public int Compare(T o1, T o2)
+            {
+                if (this.CompareExpression != null)
+                {
+                    return this.CompareExpression(o1, o2);
+                }
+                else
+                {
+                    return o1.CompareTo(o2);
+                }
+            }
+
+            public override string ToString()
+            {
+                string s = "";
+                for (int i = 0; i < data.Count; ++i)
+                    s += data[i].ToString() + " ";
+                s += "count = " + data.Count;
+                return s;
+            }
+
+        } // PriorityQueue
 }

@@ -7,7 +7,7 @@ namespace CodeJam
 {
     public class EdgyBaking
     {
-        public static void Main()
+        public static void Start()
         {
 #if true
             System.IO.StreamReader input = new System.IO.StreamReader(@"test\EdgyBaking.txt");

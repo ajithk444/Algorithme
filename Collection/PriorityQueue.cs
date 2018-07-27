@@ -6,10 +6,18 @@ namespace Collection
     public class PriorityQueue<T> where T : IComparable<T>
     {
         private List<T> data;
+        private Func<T, T, int> CompareExpression { get; set; }
 
         public PriorityQueue()
         {
             this.data = new List<T>();
+        }
+
+        public PriorityQueue(Func<T, T, int> compareExpression)
+        {
+            this.data = new List<T>();
+            this.CompareExpression = compareExpression;
+            
         }
 
         public PriorityQueue(T[] array)
@@ -28,7 +36,7 @@ namespace Collection
             while (ci > 0)
             {
                 int pi = (ci - 1) / 2; // parent index
-                if (data[ci].CompareTo(data[pi]) >= 0) break; // child item is larger than (or equal) parent so we're done
+                if (this.Compare(data[ci], data[pi]) >= 0) break; // child item is larger than (or equal) parent so we're done
                 T tmp = data[ci]; data[ci] = data[pi]; data[pi] = tmp;
                 ci = pi;
             }
@@ -49,9 +57,9 @@ namespace Collection
                 int ci = pi * 2 + 1; // left child index of parent
                 if (ci > li) break;  // no children so done
                 int rc = ci + 1;     // right child
-                if (rc <= li && data[rc].CompareTo(data[ci]) < 0) // if there is a rc (ci + 1), and it is smaller than left child, use the rc instead
+                if (rc <= li && Compare(data[rc],data[ci]) < 0) // if there is a rc (ci + 1), and it is smaller than left child, use the rc instead
                     ci = rc;
-                if (data[pi].CompareTo(data[ci]) <= 0) break; // parent is smaller than (or equal to) smallest child so done
+                if (Compare(data[pi], data[ci]) <= 0) break; // parent is smaller than (or equal to) smallest child so done
                 T tmp = data[pi]; data[pi] = data[ci]; data[ci] = tmp; // swap parent and child
                 pi = ci;
             }
@@ -67,6 +75,18 @@ namespace Collection
         public int Count()
         {
             return data.Count;
+        }
+
+        public int Compare(T o1, T o2)
+        {
+            if (this.CompareExpression != null)
+            {
+                return this.CompareExpression(o1, o2);
+            }
+            else
+            {
+                return o1.CompareTo(o2);
+            }
         }
 
         public override string ToString()
