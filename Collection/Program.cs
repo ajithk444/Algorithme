@@ -25,17 +25,27 @@ namespace Collection
             //priorityQueue.Enqueue(new Employee("Huangshen", 2));
             //Console.WriteLine(priorityQueue);
 
-            PriorityQueue<Room> queue = new PriorityQueue<Room>();
-            queue.Enqueue(new Room(1000));
-            int personNum = 4;
-            for (int i = 0; i < personNum; i++)
-            {
-                var room = queue.Dequeue();
-                queue.Enqueue(new Room((room.Num - 1) / 2));
-                queue.Enqueue(new Room((room.Num) / 2));
-            }
+            //PriorityQueue<Room> queue = new PriorityQueue<Room>();
+            //queue.Enqueue(new Room(1000));
+            //int personNum = 4;
+            //for (int i = 0; i < personNum; i++)
+            //{
+            //    var room = queue.Dequeue();
+            //    queue.Enqueue(new Room((room.Num - 1) / 2));
+            //    queue.Enqueue(new Room((room.Num) / 2));
+            //}
 
-            Console.WriteLine(queue);
+            PriorityQueue<double> queue = new PriorityQueue<double>((a, b)=> { return Math.Sign((b-Math.Floor(b)) - (a-Math.Floor(a))); });
+            queue.Enqueue(100.25);
+            queue.Enqueue(110.37);
+            queue.Enqueue(10.2);
+            queue.Enqueue(4.45);
+            queue.Enqueue(400.01);
+
+            while (queue.Count() > 0)
+            {
+                Console.WriteLine(queue.Dequeue());
+            }
 
             Console.Read();
         }

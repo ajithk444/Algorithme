@@ -7,7 +7,7 @@ namespace CodeJam
 {
     public class RoundingError
     {
-        public static void Main()
+        public static void Start()
         {
 #if true
             System.IO.StreamReader input = new System.IO.StreamReader(@"test\RoundingError.txt");
@@ -66,7 +66,14 @@ namespace CodeJam
                     }
                     else
                     {
-                        lowerScores.Enqueue(p);
+                        if (IsHigherScore(p))
+                        {
+                            higherScores.Add(p);
+                        }
+                        else
+                        {
+                            lowerScores.Enqueue(p);
+                        }
                     }
                     left--;
                 }
