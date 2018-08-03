@@ -30,19 +30,15 @@ namespace CodeJam.Model
 
             for (int i = 0; i < t; i++)
             {
-                //code
+                Solve(Ns[i], nums[i]);
             }
 
             //Console.Read();
         }
 
-        public static bool Solve(int[] Ns, char[][] strs)
+        public static void Solve(int[] Ns, int[][] nums)
         {
-            int R = Ns[0];
-            int C = Ns[1];
-
-
-            return true;
+            int N = Ns[0];
         }
 
         public static void Output(int caseNum, string result)
