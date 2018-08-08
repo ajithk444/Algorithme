@@ -6,7 +6,7 @@ namespace CodeJam.Model
 {
     public class MysteriousRoadSigns
     {
-        public static void Main()
+        public static void Start()
         {
 #if true
             System.IO.StreamReader input = new System.IO.StreamReader(@"test\MysteriousRoadSigns.txt");

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using input = System.Console;
 
@@ -7,44 +6,42 @@ namespace CodeJam.Model
 {
     public class ModelNumsLinesNums
     {
+        public static int T;
+        public static int N;
+        public static int[][] Nums;
+
         public static void Start()
         {
 #if false
             System.IO.StreamReader input = new System.IO.StreamReader(@"test\test.txt");
 #endif
 
-            int t = Convert.ToInt32(input.ReadLine());
-            int[][] Ns = new int[t][];
-            int[][][] nums = new int[t][][];
+            T = Convert.ToInt32(input.ReadLine());
 
-            for (int i = 0; i < t; i++)
+            for (int i = 0; i < T; i++)
             {
-                Ns[i] = input.ReadLine().Split(' ').Select(int.Parse).ToArray();
-                int N = Ns[i][0];
-                nums[i] = new int[N][];
+                N = int.Parse(input.ReadLine());
+                Nums = new int[N][];
+
                 for (int h = 0; h < N; h++)
                 {
-                    nums[i][h] = input.ReadLine().Split(' ').Select(int.Parse).ToArray();
+                    Nums[h] = input.ReadLine().Split(' ').Select(int.Parse).ToArray();
                 }
-            }
 
-            for (int i = 0; i < t; i++)
-            {
-                Solve(Ns[i], nums[i]);
+                Solve();
             }
 
             //Console.Read();
         }
 
-        public static void Solve(int[] Ns, int[][] nums)
+        public static void Solve()
         {
-            int N = Ns[0];
+
         }
 
         public static void Output(int caseNum, string result)
         {
             Console.Write("Case #" + caseNum + ": " + result);
-
             Console.WriteLine();
         }
     }
