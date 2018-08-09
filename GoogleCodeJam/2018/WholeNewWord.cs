@@ -1,25 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using input = System.Console;
 
 namespace GoogleCodeJam
 {
-    public class Question1
+    public class WholeNewWord
     {
-        public static void Start()
+        public static void Main()
         {
-            int t = Convert.ToInt32(Console.ReadLine());
+#if true
+            System.IO.StreamReader input = new System.IO.StreamReader(@"test\WholeNewWord.txt");
+#endif
+            int t = Convert.ToInt32(input.ReadLine());
 
             int[][] NL = new int[t][];
             string[][] Ws = new string[t][];
 
             for (int i = 0; i < t; i++)
             {
-                NL[i] = Console.ReadLine().Split(' ').Select(s => Convert.ToInt32(s)).ToArray();
+                NL[i] = input.ReadLine().Split(' ').Select(int.Parse).ToArray();
                 Ws[i] = new string[NL[i][0]];
                 for (int j = 0; j < NL[i][0]; j++)
                 {
-                    string str = Console.ReadLine();
+                    string str = input.ReadLine();
                     Ws[i][j] = str;
                 }
             }
@@ -44,6 +48,10 @@ namespace GoogleCodeJam
 
                 string result = "";
                 bool isPossible = false;
+
+                //IEnumerable avoid ocuppying too much memory, it is much faster,
+                //it will be evaluated in compiler, 
+                //Don't use ToList
                 foreach (string item in lstRes)
                 {
                     if (!hash.Contains(item))
@@ -56,22 +64,23 @@ namespace GoogleCodeJam
 
                 Output(i + 1, result, isPossible);
             }
-        
+
+            Console.Read();
         }
 
         public static void Output(int caseNum, string result, bool isPos)
         {
             if (isPos)
             {
-                Console.Write("Case #" + caseNum + ": " + result);
+                input.Write("Case #" + caseNum + ": " + result);
             }
             else
             {
-                Console.Write("Case #" + caseNum + ": -");
+                input.Write("Case #" + caseNum + ": -");
             }
             
 
-            Console.WriteLine();
+            input.WriteLine();
         }
     }
 }

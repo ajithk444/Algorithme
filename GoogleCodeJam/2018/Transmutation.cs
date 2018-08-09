@@ -14,7 +14,7 @@ namespace CodeJam.Model
         public static long[] G;
         public static long[] Reqs;
 
-        public static void Main()
+        public static void Start()
         {
 #if true
             System.IO.StreamReader input = new System.IO.StreamReader(@"test\Transmutation.txt");

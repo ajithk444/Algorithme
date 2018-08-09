@@ -32,3 +32,4 @@ C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\b
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\test\RoundingError.txt
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\test\MysteriousRoadSigns.txt
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\test\Transmutation.txt
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\test\WholeNewWord.txt
