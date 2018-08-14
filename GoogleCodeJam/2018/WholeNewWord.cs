@@ -7,7 +7,7 @@ namespace GoogleCodeJam
 {
     public class WholeNewWord
     {
-        public static void Main()
+        public static void Start()
         {
 #if true
             System.IO.StreamReader input = new System.IO.StreamReader(@"test\WholeNewWord.txt");

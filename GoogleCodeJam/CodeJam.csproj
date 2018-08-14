@@ -46,6 +46,7 @@
     <Compile Include="2018\BitParty.cs" />
     <Compile Include="2018\EdgyBaking.cs" />
     <Compile Include="2018\Hashset.cs" />
+    <Compile Include="2018\AntStack.cs" />
     <Compile Include="2018\Transmutation.cs" />
     <Compile Include="2018\MysteriousRoadSigns.cs" />
     <Compile Include="2018\WholeNewWord.cs" />
@@ -110,6 +111,11 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="test\WholeNewWord.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="test\AntStack.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
