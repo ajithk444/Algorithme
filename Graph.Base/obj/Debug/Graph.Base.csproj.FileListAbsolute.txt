@@ -3,3 +3,4 @@ C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Base\bin\
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Base\obj\Debug\Graph.Base.csprojResolveAssemblyReference.cache
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Base\obj\Debug\Graph.Base.dll
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Base\obj\Debug\Graph.Base.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Base\obj\Debug\Graph.Base.csproj.CoreCompileInputs.cache

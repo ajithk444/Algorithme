@@ -1,0 +1,10 @@
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Other\bin\Debug\Graph.Other.exe.config
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Other\bin\Debug\Graph.Other.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Other\bin\Debug\Graph.Other.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Other\bin\Debug\Graph.Base.dll
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Other\bin\Debug\Graph.Base.pdb
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Other\obj\Debug\Graph.Other.csprojResolveAssemblyReference.cache
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Other\obj\Debug\Graph.Other.csproj.CoreCompileInputs.cache
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Other\obj\Debug\Graph.Other.csproj.CopyComplete
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Other\obj\Debug\Graph.Other.exe
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\Graph.Other\obj\Debug\Graph.Other.pdb

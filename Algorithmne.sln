@@ -65,6 +65,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Geometric", "Geometric", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometric", "Geometric\Geometric.csproj", "{DF99F083-F4F4-4963-BA10-AFA211D02348}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph.Other", "Graph.Other\Graph.Other.csproj", "{BA3CEB29-5BDE-46B5-B62F-3032D3FBE577}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{DF99F083-F4F4-4963-BA10-AFA211D02348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF99F083-F4F4-4963-BA10-AFA211D02348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF99F083-F4F4-4963-BA10-AFA211D02348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA3CEB29-5BDE-46B5-B62F-3032D3FBE577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3CEB29-5BDE-46B5-B62F-3032D3FBE577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA3CEB29-5BDE-46B5-B62F-3032D3FBE577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3CEB29-5BDE-46B5-B62F-3032D3FBE577}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -171,6 +177,7 @@ Global
 		{EA876243-B32C-42BC-9D2B-BE95832C6877} = {1DA28589-EA8E-4A91-8146-81DBA3148FC8}
 		{65D5DBEE-996E-4E5E-8E05-7E3F0767E7C3} = {12B2E162-C478-4695-864C-99CC2D421373}
 		{DF99F083-F4F4-4963-BA10-AFA211D02348} = {9A8A9B07-BFB0-488D-8515-0E7BD9A97A43}
+		{BA3CEB29-5BDE-46B5-B62F-3032D3FBE577} = {E1DF59D9-4CBA-4525-8C6A-BC87A79E0B7F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F923B038-6531-4927-B4C3-C40C5AB4D755}
