@@ -4,7 +4,7 @@ using input = System.Console;
 
 namespace CodeJam.Model
 {
-    public class ModelNumsLinesNums
+    public class NumsLinesNumsInteractive
     {
         public static int T;
         public static int N;
@@ -26,16 +26,16 @@ namespace CodeJam.Model
                 for (int h = 0; h < N; h++)
                 {
                     Nums[h] = input.ReadLine().Split(' ').Select(int.Parse).ToArray();
+                    Solve();
                 }
-
-                Solve();
             }
 
-            //Console.Read();
+            Console.Read();
         }
 
         public static void Solve()
         {
+            
 
         }
 

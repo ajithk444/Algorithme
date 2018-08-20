@@ -11,7 +11,7 @@ namespace CodeJam.Model
         public static long[] Nums;
         public static long[,] Sums;
 
-        public static void Main()
+        public static void Start()
         {
 #if true
             System.IO.StreamReader input = new System.IO.StreamReader(@"test\AntStack.txt");

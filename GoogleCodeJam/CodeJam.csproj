@@ -47,6 +47,7 @@
     <Compile Include="2018\EdgyBaking.cs" />
     <Compile Include="2018\Hashset.cs" />
     <Compile Include="2018\AntStack.cs" />
+    <Compile Include="2018\LollipopShop.cs" />
     <Compile Include="2018\Transmutation.cs" />
     <Compile Include="2018\MysteriousRoadSigns.cs" />
     <Compile Include="2018\WholeNewWord.cs" />
@@ -58,8 +59,9 @@
     <Compile Include="2018\CruiseControl.cs" />
     <Compile Include="2018\SenateEvacuation.cs" />
     <Compile Include="2018\GuessNumber.cs" />
-    <Compile Include="Model\ModelNumsLinesChars.cs" />
-    <Compile Include="Model\ModelNumsLinesNums.cs" />
+    <Compile Include="Model\NumsLinesChars.cs" />
+    <Compile Include="Model\NumsLinesNumsInteractive.cs" />
+    <Compile Include="Model\NumsLinesNums.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="2018\TroubleSort.cs" />
   </ItemGroup>
@@ -116,6 +118,11 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="test\AntStack.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="test\LollipopShop.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
