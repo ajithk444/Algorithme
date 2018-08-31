@@ -8,7 +8,7 @@ namespace CodeJam.Model
     {
         public static int T;
         public static int N;
-        public static int[][] Nums;
+        public static int[] Nums;
 
         public static void Start()
         {
@@ -21,12 +21,7 @@ namespace CodeJam.Model
             for (int i = 0; i < T; i++)
             {
                 N = int.Parse(input.ReadLine());
-                Nums = new int[N][];
-
-                for (int h = 0; h < N; h++)
-                {
-                    Nums[h] = input.ReadLine().Split(' ').Select(int.Parse).ToArray();
-                }
+                Nums = input.ReadLine().Split(' ').Select(int.Parse).ToArray();
 
                 Solve();
             }
