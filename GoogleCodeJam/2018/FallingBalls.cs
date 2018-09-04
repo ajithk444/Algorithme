@@ -10,7 +10,7 @@ namespace CodeJam.Model
         public static int C;
         public static int[] Bs;
 
-        public static void Main()
+        public static void Start()
         {
 #if true
             System.IO.StreamReader input = new System.IO.StreamReader(@"test\FallingBalls.txt");
