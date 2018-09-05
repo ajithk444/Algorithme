@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="BiPartiteGraph.cs" />
     <Compile Include="FordFulkersonMaximumFlow.cs" />
+    <Compile Include="MaximumBiPartiteGraph.cs" />
     <Compile Include="MColoring.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -52,6 +53,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="questions\MaximumBiPartiteMatching.txt" />
     <Content Include="questions\BiPartiteGraph.txt" />
     <Content Include="questions\FordFulkersonMaximumFlow.txt" />
     <Content Include="questions\MColoring.txt" />
