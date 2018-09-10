@@ -33,15 +33,24 @@ namespace Graph.Other
 
             //Console.WriteLine(FordFulkersonMaximumFlow.GetMaximunFlow(graph, 0, 5));
 
-            int[,] bpGraph = new int[6, 6]
-                          {{0, 1, 1, 0, 0, 0},
-                           {0, 0, 0, 0, 0, 0},
-                           {1, 0, 0, 1, 0, 0},
-                           {0, 0, 1, 0, 0, 0},
-                           {0, 0, 1, 1, 0, 0},
-                           {0, 0, 0, 0, 0, 1}};
+            //int[,] bpGraph = new int[6, 6]
+            //              {{0, 1, 1, 0, 0, 0},
+            //               {0, 0, 0, 0, 0, 0},
+            //               {1, 0, 0, 1, 0, 0},
+            //               {0, 0, 1, 0, 0, 0},
+            //               {0, 0, 1, 1, 0, 0},
+            //               {0, 0, 0, 0, 0, 1}};
 
-            Console.WriteLine(MaximumBiPartiteGraph.GetMaximumBitPartiteMatching(bpGraph));
+            //Console.WriteLine(MaximumBiPartiteGraph.GetMaximumBitPartiteMatching(bpGraph));
+
+            int[,] graph= { { 1, 4, 4, 4, 4, 3, 3, 1 },
+                        { 2, 1, 1, 4, 3, 3, 1, 1 },
+                        { 3, 2, 1, 1, 2, 3, 2, 1 },
+                        { 3, 3, 2, 1, 2, 2, 2, 2 },
+                        { 3, 1, 3, 1, 1, 4, 4, 4 },
+                        { 1, 1, 3, 1, 1, 4, 4, 4 } };
+
+            LargestConnectedComponent.GetLargestConnectedComponent(graph);
 
             Console.Read();
         }

@@ -10,10 +10,7 @@ namespace Test
     {
         public static void Main()
         {
-            Test test = null;
-            test.Start();
-            Console.Write("sss");
-            Console.Read();
+            var list = new int[] { 1, 1, 3, 3 };
         }
 
         public void Start()
