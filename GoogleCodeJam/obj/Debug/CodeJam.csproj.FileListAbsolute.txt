@@ -8,7 +8,6 @@ F:\NetFramework\C# code\CodingGame\GoogleCodeJam\obj\Debug\GoogleCodeJam.pdb
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\GoogleCodeJam.exe.config
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\GoogleCodeJam.exe
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\GoogleCodeJam.pdb
-C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\obj\Debug\CodeJam.csprojResolveAssemblyReference.cache
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\obj\Debug\CodeJam.csproj.CoreCompileInputs.cache
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\obj\Debug\GoogleCodeJam.exe
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\obj\Debug\GoogleCodeJam.pdb
@@ -38,3 +37,5 @@ C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\b
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\test\GracefulChainsawJunggers.txt
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\test\FallingBalls.txt
 C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\test\CostumeChange.txt
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\bin\Debug\test\GridCeption.txt
+C:\Users\yshen\Documents\Visual Studio 2015\Projects\Algorithmne\GoogleCodeJam\obj\Debug\CodeJam.csprojAssemblyReference.cache
