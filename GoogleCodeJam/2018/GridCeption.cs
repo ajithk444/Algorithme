@@ -11,7 +11,7 @@ namespace CodeJam.Model
         public static int[] Ns;
         public static int R;
         public static int C;
-        public static char[][] Cs;
+        public static int[][] Cs;
         public static int[,] ConnectedA;
         public static int Max;
 
@@ -29,10 +29,10 @@ namespace CodeJam.Model
                 Ns = input.ReadLine().Split(' ').Select(int.Parse).ToArray();
                 R = Ns[0];
                 C = Ns[1];
-                Cs = new char[R][];
+                Cs = new int[R][];
                 for (int h = 0; h < R; h++)
                 {
-                    Cs[h] = input.ReadLine().ToCharArray();
+                    Cs[h] = input.ReadLine().ToCharArray().Select(c => c=='B'? 1:0).ToArray();
                 }
 
                 Solve();
@@ -60,10 +60,7 @@ namespace CodeJam.Model
 
                     for (int m = 0; m < 4; m++)
                     {
-                        if (i+xMove[m] >= 0 && j+yMove[m] >= 0 && Cs[i + xMove[m]][j + yMove[m]] == 'B')
-                        {
-                            t += (int)Math.Pow(2, m);
-                        }
+                        t += (int)Math.Pow(2, m) * GetValue(i + xMove[m], j + yMove[m]);
                     }
 
                     patterns.Add(t);
@@ -80,22 +77,12 @@ namespace CodeJam.Model
                     {
                         for (int n = 0; n < 4; n++)
                         {
-                            char color = ((m >> n) & 1) == 1 ? 'B' : 'W';
-                            switch (n)
-                            {
-                                case 0:
-                                    SetValue(0, 0, i, j, color);
-                                    break;
-                                case 1:
-                                    SetValue(0, j, i, C, color);
-                                    break;
-                                case 2:
-                                    SetValue(i, 0, R, j, color);
-                                    break;
-                                case 3:
-                                    SetValue(i, j, R, C, color);
-                                    break;
-                            } 
+                            int color = (m >> n) & 1;
+                            int r1 = (n == 0 || n == 1) ? 0 : i;
+                            int r2 = (n == 0 || n == 1) ? i : R;
+                            int c1 = (n == 0 || n == 2) ? 0 : j;
+                            int c2 = (n == 0 || n == 2) ? j : C;
+                            SetValue(r1, c1, r2, c2, color);
                         }
 
                         GetLargestConnectedComponent();
@@ -104,7 +91,20 @@ namespace CodeJam.Model
             }
         }
 
-        public static void SetValue(int x0, int y0, int x1, int y1, char color)
+        public static int GetValue(int x, int y)
+        {
+            if (x < 0) x += 1;
+
+            if (y < 0) y += 1;
+
+            if (x >= R) x--;
+
+            if (y >= C) y--;
+
+            return Cs[x][y];
+        }
+
+        public static void SetValue(int x0, int y0, int x1, int y1, int color)
         {
             for (int i = x0; i < x1; i++)
             {
